@@ -1,0 +1,11 @@
+@use "../utils/function" as func;
+@use "../utils/variables" as var;
+
+.container {
+  max-width: func.container(1440, 110, var.$mobilePadding);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var.$mobilePadding + px;
+  padding-right: var.$mobilePadding + px;
+}
+

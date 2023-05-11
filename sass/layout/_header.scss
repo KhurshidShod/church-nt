@@ -1,0 +1,7 @@
+@use '../utils/mixin' as mixin;
+
+header {
+  button {
+    @include mixin.nav-btn;
+  }
+}

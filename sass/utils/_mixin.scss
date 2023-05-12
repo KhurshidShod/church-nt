@@ -1,6 +1,12 @@
 @use "variables" as var;
 @use "../base/typography";
 
+@mixin df-ai-jc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @mixin btn($padding: 24px 64px) {
   padding: $padding;
   border-radius: 12px;

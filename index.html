@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/home.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+  >
   </head>
   <body>
     <header>
@@ -13,27 +29,25 @@
           <div class="nav__wrapper-logo">
             <img src="images/home/Logo.png" alt="">
           </div>
-          <div class="nav__wrapper-menu">
+          <div id="navMenu" class="nav__wrapper-menu">
             <ul class="nav__wrapper-menu-list">
-              <li class="nav__wrapper-menu-list-item">home</li>
-              <li class="nav__wrapper-menu-list-item">about us</li>
-              <li class="nav__wrapper-menu-list-item">sermon</li>
-              <li class="nav__wrapper-menu-list-item">blog</li>
+              <li id="list-item" class="nav__wrapper-menu-list-item"><a href="">home</a></li>
+              <li id="list-item" class="nav__wrapper-menu-list-item"><a href="">about us</a></li>
+              <li id="list-item" class="nav__wrapper-menu-list-item"><a href="">sermon</a></li>
+              <li id="list-item" class="nav__wrapper-menu-list-item"><a href="">blog</a></li>
+              <li id="closeNav" class="nav__wrapper-menu-list-item"><i class="fa-solid fa-xmark"></i></li>
             </ul>
             <button>contact us</button>
+          </div>
+          <div id="openNav" class="openNav">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Shamshod</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dicta
-          temporibus accusantium maiores obcaecati rerum est voluptate.
-          Perspiciatis molestiae accusantium facere totam id. Aspernatur
-          excepturi nemo nisi error maiores eaque?
-        </p>
-      </section>
+      
     </main>
   </body>
   <script src="js/main.js"></script>

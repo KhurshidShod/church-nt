@@ -18,9 +18,14 @@ textarea:focus {
   outline: none;
 }
 
+li {
+  list-style: none;
+}
+
 button {
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 .container {
@@ -49,18 +54,20 @@ header button:hover {
   background-color: #f2c79b;
 }
 
-.header {
-  text-align: center;
+.component1__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.header h6 {
+.component1__container h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #161722;
   text-transform: uppercase;
-  margin-bottom: 16px;
 }
-.header h2 {
+.component1__container h2 {
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;

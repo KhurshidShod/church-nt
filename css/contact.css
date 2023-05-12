@@ -57,6 +57,38 @@ header nav {
     gap: 30px;
   }
 }
+@media (max-width: 850px) {
+  header nav {
+    gap: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+header nav #openNav {
+  width: 50px;
+  height: 30px;
+  background-color: red;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+header nav #openNav span {
+  width: 75%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+header nav #openNav span:nth-child(even) {
+  margin-left: 10px;
+}
 header nav .nav__wrapper-logo {
   padding: 0 2rem 0 0;
   height: 100%;
@@ -71,11 +103,27 @@ header nav .nav__wrapper-logo img {
   height: 26px;
 }
 header nav .nav__wrapper-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   width: calc(100% - 132px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+@media (max-width: 850px) {
+  header nav .nav__wrapper-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    top: -150%;
+    left: 0;
+  }
 }
 header nav .nav__wrapper-menu button {
   padding: 20px 48px;
@@ -95,6 +143,14 @@ header nav .nav__wrapper-menu button {
 header nav .nav__wrapper-menu button:hover {
   background-color: #f2c79b;
 }
+@media (max-width: 850px) {
+  header nav .nav__wrapper-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 header nav .nav__wrapper-menu-list-item {
   float: left;
   margin: 1.5rem;
@@ -105,6 +161,24 @@ header nav .nav__wrapper-menu-list-item {
   cursor: pointer;
   padding: 5px;
   position: relative;
+}
+@media (max-width: 850px) {
+  header nav .nav__wrapper-menu-list-item {
+    color: #161722 !important;
+  }
+}
+header nav .nav__wrapper-menu-list-item:last-child {
+  display: none;
+}
+@media (max-width: 850px) {
+  header nav .nav__wrapper-menu-list-item:last-child {
+    display: flex;
+    color: #161722;
+    font-size: 40px;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
 }
 header nav .nav__wrapper-menu-list-item::before {
   content: "";

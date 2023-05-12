@@ -67,8 +67,8 @@ header nav .nav__wrapper-menu-list-item {
 
 .component1__container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .component1__container h6 {
@@ -84,4 +84,61 @@ header nav .nav__wrapper-menu-list-item {
   line-height: 64px;
   color: #161722;
   text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 64px;
+}
+.component1__container__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 24px;
+}
+.component1__container__box--card {
+  width: 302px;
+  padding: 48px 32px;
+  background-color: #fff5eb;
+}
+.component1__container__box--card h2 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+}
+.component1__container__box--card p:first-child {
+  padding-bottom: 16px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.component1__container__box--card p:nth-child(3) {
+  padding-top: 16px;
+  padding-bottom: 48px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161722;
+  opacity: 0.78;
+}
+.component1__container__box--card p:nth-child(4), .component1__container__box--card p :last-child {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #161722;
 }

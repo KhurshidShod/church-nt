@@ -66,3 +66,14 @@
 @mixin title-6 {
   @include title(400, var.$h6, 19px);
 }
+
+@mixin card-bg($color){
+  background-color: $color;
+}
+
+@mixin df($jc, $ai, $fd){
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+}

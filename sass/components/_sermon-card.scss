@@ -9,7 +9,9 @@
         @include mix.title-2;
         padding-bottom: 64px;
     }
-    &__box--card {
+    &__box {
+    @include mix.df(center, center, row);
+    &--card {
     @include mix.df(center, center, column);
         max-width: 302px;
         padding: 48px 32px;
@@ -101,5 +103,6 @@
                 padding-bottom: 16px;
             }
         }
+    }
     }
 }

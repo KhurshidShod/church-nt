@@ -13,6 +13,7 @@ const closeNav = document.getElementById("closeNav");
 const navMenu = document.getElementById("navMenu");
 const listItems = document.querySelectorAll("#list-item");
 const header = document.querySelector("header");
+const loaderScreen = document.querySelector(".loader")
 
 let urlAnimate = () => {
     window.location.hash = `-${emojis[Math.floor((Date.now() / 100) % emojis.length)]}`;
@@ -36,4 +37,8 @@ window.addEventListener("scroll", () => {
     } else {
         header.classList.remove("shrink")
     }
+})
+
+window.addEventListener("load", () => {
+    loaderScreen.style.display = "none"
 })

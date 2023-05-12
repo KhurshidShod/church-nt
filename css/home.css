@@ -98,6 +98,14 @@ header nav .nav__wrapper-menu-list-item {
   width: 302px;
   padding: 48px 32px;
   background-color: #fff5eb;
+  transition: 0.8s;
+}
+.component1__container__box--card:hover {
+  transform: translateY(-15px);
+  border: 1px solid #FFD0A0;
+  box-shadow: inset 0 -400px 10px -10px rgba(255, 208, 160, 0.8);
+  font-size: 20px;
+  color: #fff;
 }
 .component1__container__box--card h2 {
   font-family: "Roboto Condensed";

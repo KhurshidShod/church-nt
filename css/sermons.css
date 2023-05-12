@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: none !important;
 }
 
 *,
@@ -27,6 +28,26 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 100000000000000000;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  -moz-transition: transform 0.1s linear;
+  -ms-transition: transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
 }
 
 .container {

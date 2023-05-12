@@ -11,29 +11,20 @@
     background-position: center;
     max-height: 432px;
     height: 100vh;
+    background-color: var.$bgColor;
     width: 100vw;
      display: flex;
      align-items: center;
-
-    
-    
-     
     .sermons_header {
        @include var.containerg;
        justify-content: flex-start;
-        
-        
         &_p{
             @include var.title(700, 16px, 18.5px, #232536);
             padding-bottom: 16px;
-        
-
-    
         }
         &_h2{
             @include var.title-3;
             transition: 0.5s;
-            
         }
         &_h2:hover{
             font-size: 44px;

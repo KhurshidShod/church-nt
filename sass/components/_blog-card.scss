@@ -8,6 +8,7 @@
     font-family: 'Roboto Condensed';
     padding-top: 5rem;
     padding-bottom: 5rem;
+    background-color: var.$bgColor;
     h6 {
         @include mix.title-6;
     }

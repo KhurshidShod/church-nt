@@ -96,3 +96,15 @@ header button:hover {
 .container2 .sermons_header_h2:hover {
   font-size: 44px;
 }
+
+@media (max-width: 450px) {
+  .sermons_header {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .sermons_header .sermons_header_h2 {
+    font-size: 30px;
+  }
+}

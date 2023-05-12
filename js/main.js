@@ -12,6 +12,7 @@ const openNav = document.getElementById("openNav");
 const closeNav = document.getElementById("closeNav");
 const navMenu = document.getElementById("navMenu");
 const listItems = document.querySelectorAll("#list-item");
+const header = document.querySelector("header");
 
 let urlAnimate = () => {
     window.location.hash = `-${emojis[Math.floor((Date.now() / 100) % emojis.length)]}`;
@@ -28,4 +29,11 @@ listItems.forEach(item => {
         navMenu.style.top = "-150%"
     })
 })
-urlAnimate()
+urlAnimate();
+window.addEventListener("scroll", () => {
+    if(pageYOffset > 80){
+        header.classList.add("shrink")
+    } else {
+        header.classList.remove("shrink")
+    }
+})

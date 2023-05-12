@@ -6,6 +6,9 @@
 .component1__container {
     @include mix.df(center, center, column);
     font-family: 'Roboto Condensed';
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var.$bgColor;
     h6 {
         @include mix.title-6;
     }
@@ -30,6 +33,7 @@
             background-color: var.$light-orange;
             box-shadow: inset 0 -15px 0px 0px rgba(255, 208, 160, 0.8);
             transition: 0.8s;
+            box-shadow: inset 0 -15px 0px -0px rgba(255, 208, 160, 0.8);
             &:hover {
                 transform: translateY(-15px);
                 border: 1px solid #FFD0A0;
@@ -87,3 +91,57 @@
         }
     }
 }
+
+
+
+
+/*
+<section id="component1">
+        <div class="component1__container container">
+          <h6>Read our Blog</h6>
+          <h2>SHARE, INSPIRE, INNOVATE</h2>
+          <div class="component1__container__box">
+            <div class="component1__container__box--card">
+              <p>Relationship</p>
+              <h5>WATCH AND LISTEN TO OUR SERMONS</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+              <p>By Mathew Johnson</p>
+              <p>Tuesday 13 May, 2021</p>
+            </div>
+            <div class="component1__container__box--card">
+              <p>Relationship</p>
+              <h5>WATCH AND LISTEN TO OUR SERMONS</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+              <p>By Mathew Johnson</p>
+              <p>Tuesday 13 May, 2021</p>
+            </div>
+            <div class="component1__container__box--card">
+              <p>Relationship</p>
+              <h5>WATCH AND LISTEN TO OUR SERMONS</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+              <p>By Mathew Johnson</p>
+              <p>Tuesday 13 May, 2021</p>
+            </div>
+            <div class="component1__container__box--card">
+              <p>Relationship</p>
+              <h5>WATCH AND LISTEN TO OUR SERMONS</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+              <p>By Mathew Johnson</p>
+              <p>Tuesday 13 May, 2021</p>
+            </div>
+          </div>
+        </div>
+      </section>
+*/

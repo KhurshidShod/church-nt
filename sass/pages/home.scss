@@ -2,4 +2,200 @@
 @use '../components/top-sermon';
 @use "../layout/header";
 @use "../components/blog-card";
+<<<<<<< HEAD
 @use "../components/sermon-card";
+=======
+@use "../base/typography";
+@use "../utils/variables" as var;
+@use "../utils/mixin" as mixin;
+main{
+    font-family: 'Roboto Condensed';
+.hero {
+    width: 100%;
+    @include mixin.df(flex-start,center,row);
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+        background-image: url("../../images/home/home-hero.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+    }
+    .container{
+        width: 100%;
+    }
+    &__wrapper{
+        width: 100%;
+        padding-left: 163px;
+        @media (max-width: 850px) {
+            padding-left: 0;
+        }
+        &-content{
+        @include mixin.df(start, start, column);
+        width: 100%;
+        @media (max-width: 850px) {
+            @include mixin.df(center, center, column);
+            text-align: center;
+        }
+        h5{
+            font-size: var.$h6;
+            color: var.$white;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        h1{
+            max-width: 592px;
+            font-weight: 700;
+            font-size: var.$h1;
+            color: var.$white;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            text-transform: uppercase;
+            @media (max-width: 400px) {
+                font-size: var.$h2;
+            }
+        }
+        button{
+            @include mixin.primary-btn(24px 64px);
+        }
+        p{
+            max-width: 308px;
+            font-weight: 400;
+            font-size: var.$h6;
+            color: var.$white;
+            text-transform: uppercase;
+            margin-top: 64px;
+            margin-left: 25px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 18px;
+                height: 1px;
+                background-color: var.$primary-color;
+                top: 25%;
+                left: -25px;
+            }
+        }
+        }
+    }
+}   
+}
+.relevant{
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var.$bgColor;
+    body.dark{
+        background-color: black;
+    }
+    &__wrapper{
+        width: 100%;
+        @include mixin.df(center, center, column);
+        p{
+            font-size: var.$h6;
+            color: var.$black;
+            font-weight: 400;
+            text-transform: uppercase;
+            body.dark{
+                color: var.$white;
+            }
+        }
+        h1{
+            font-size: var.$h1;
+            color: var.$black;
+            font-weight: 700;
+            margin-top: 1rem;
+            margin-bottom: 64px;
+            @media (max-width: 550px) {
+                font-size: var.$h2;
+                text-align: center;
+            }
+            body.dark{
+                color: var.$white;
+            }
+            text-transform: uppercase;
+        }
+        &-content{
+        @include mixin.df(center, start, row);
+        gap: 1rem;
+        flex-wrap: wrap;
+        &-card{
+        position: relative;
+        @include mixin.df(center, center, column);
+        min-width: 250px;
+        min-height: 350px;
+        flex-grow: .5;
+        z-index: 2;
+            &-hover{
+                width: 100%;
+                height: 5%;
+                background-color: var.$primary-color;
+                position: absolute;
+                left: 0;
+                transition: height .3s linear;
+                bottom: 0;
+                z-index: -1;
+                -webkit-transition: height .3s linear;
+                -moz-transition: height .3s linear;
+                -ms-transition: height .3s linear;
+                -o-transition: height .3s linear;
+            }
+            &:hover{
+                .relevant__wrapper-content-card-hover{
+                    height: 100% !important;
+                }
+            }
+            &-image{
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background-color: var.$primary-color;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                margin-bottom: 24px;
+                @include mixin.df(center, center, row);
+                img{
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+            @include mixin.df(start, start, column);
+            padding: 80px;
+            @media (max-width: 1000px) {
+                padding: 35px;
+            }
+            background-color: var.$light-orange;
+            width: calc(100% / 3 - 1rem);
+            h1{
+                font-size: var.$h4;
+                color: var.$black;
+                font-weight: 700;
+                letter-spacing: -1%;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size: var.$h6;
+                color: var.$black;
+                font-weight: 400;
+            }
+        }
+        }
+    }
+}
+>>>>>>> ed43245f4ebac7427b5061a40ce96375d5fd3eea

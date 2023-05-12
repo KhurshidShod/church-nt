@@ -1,1 +1,125 @@
 @use '../global';
+@use '../utils/variables' as var;
+@use '../base/typography';
+
+main {
+    .serving__world {
+        min-height: 60vh;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        width: 100%;
+        background-image: url(../../images/about-us/about-us\ bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Roboto Condensed';
+        text-transform: uppercase;
+        @media (max-width: 1000px) {
+            & {
+                text-align: center;
+            }
+            
+        }
+        .serving__world-p {
+            font-weight: 700;
+            font-size: var.$h6;
+            color: var.$black;
+        }
+        .serving__world-h1 {
+            font-weight: 700;
+            font-size: var.$h1;
+            padding-top: 15px;
+            color: var.$black;
+        }
+    }
+    .love__compassion {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        font-family: "roboto condensed";
+        background-color: rgb(254, 254, 254);
+        min-height: 100vh;
+        width: 100%;
+        text-transform: uppercase;
+        &-content {
+            @media (max-width: 1000px) {
+                text-align: center;
+            }
+            text-align: center;
+            &-p {
+                font-weight: 700;
+                font-size: var.$h6;
+                padding-bottom: 15px;
+                color: var.$black;
+            }
+            &-h1 {
+                font-family: 700;
+                font-size: var.$h1;
+                color: var.$black;
+                padding-bottom: 30px;
+            }
+            &-p2 {
+                font-weight: 400;
+                font-size: var.$h6;
+                color: var.$black;
+                padding-bottom: 45px;
+            }
+        }
+        &-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 60px;
+            img{
+                width: calc(100% / 3 - 5rem);
+                @media (max-width: 1000px) {
+                    width: calc(100% / 3 - 1rem);
+
+                }
+                margin: .5rem;
+                height: 384px;
+                transition: .3s linear;
+                -webkit-transition: .3s linear;
+                -moz-transition: .3s linear;
+                -ms-transition: .3s linear;
+                -o-transition: .3s linear;
+                &:hover{
+                    width: calc(100% / 3);
+                    height: 500px;
+                }
+            }
+        }
+        &-articles {
+            @media (max-width: 600px) {
+                .love__compassion-article:first-child {
+                    padding-bottom: 50px;
+                }
+                flex-direction: column;
+                text-align: center;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .love__compassion-article {
+                width: 36%;
+                margin-left: 40px;
+                margin-right: 40px;
+                &-p {
+                    font-weight: 400;
+                    font-size: var.$h6;
+                    color: var.$black;
+                    padding-bottom: 15px;
+                }
+                &-h1 {
+                    font-weight: 700;
+                    color: var.$black;
+                    font-size: var.$h4;
+                    padding-bottom: 15px;
+                }
+                &-p2 {
+                    font-weight: 400;
+                    font-size: var.$h6;
+                    color: var.$black;
+                }
+            }
+        }
+    }
+}

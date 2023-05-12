@@ -100,20 +100,168 @@ header nav .nav__wrapper-menu-list-item {
   margin: 1.5rem;
   font-size: 16px;
   text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+}
+header nav .nav__wrapper-menu-list-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+header nav .nav__wrapper-menu-list-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+header nav .nav__wrapper-menu-list-item:hover::before, header nav .nav__wrapper-menu-list-item:hover::after {
+  transition: 0.3s linear;
+  width: 50%;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
 }
 
-main {
-  background-image: url(../../images/about-us/about-us\ bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 main .serving__world {
   min-height: 60vh;
   padding-top: 150px;
+  padding-bottom: 150px;
   width: 100%;
+  background-image: url(../../images/about-us/about-us\ bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+}
+@media (max-width: 1000px) {
+  main .serving__world {
+    text-align: center;
+  }
 }
 main .serving__world .serving__world-p {
   font-weight: 700;
+  font-size: 16px;
+  color: #161722;
+}
+main .serving__world .serving__world-h1 {
+  font-weight: 700;
+  font-size: 64px;
+  padding-top: 15px;
+  color: #161722;
+}
+main .love__compassion {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  font-family: "roboto condensed";
+  min-height: 100vh;
+  width: 100%;
+  text-transform: uppercase;
+}
+main .love__compassion-content {
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  main .love__compassion-content {
+    text-align: center;
+  }
+}
+main .love__compassion-content-p {
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 15px;
+  color: #161722;
+}
+main .love__compassion-content-h1 {
+  font-family: 700;
+  font-size: 64px;
+  color: #161722;
+  padding-bottom: 30px;
+}
+main .love__compassion-content-p2 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #161722;
+  padding-bottom: 45px;
+}
+main .love__compassion-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+main .love__compassion-images img {
+  width: calc(33.3333333333% - 5rem);
+  margin: 0.5rem;
+  height: 384px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+@media (max-width: 1000px) {
+  main .love__compassion-images img {
+    width: calc(33.3333333333% - 1rem);
+  }
+}
+main .love__compassion-images img:hover {
+  width: 33.3333333333%;
+  height: 500px;
+}
+main .love__compassion-articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  main .love__compassion-articles {
+    flex-direction: column;
+    text-align: center;
+  }
+  main .love__compassion-articles .love__compassion-article:first-child {
+    padding-bottom: 50px;
+  }
+}
+main .love__compassion-articles .love__compassion-article {
+  width: 36%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+main .love__compassion-articles .love__compassion-article-p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #161722;
+  padding-bottom: 15px;
+}
+main .love__compassion-articles .love__compassion-article-h1 {
+  font-weight: 700;
+  color: #161722;
+  font-size: 32px;
+  padding-bottom: 15px;
+}
+main .love__compassion-articles .love__compassion-article-p2 {
+  font-weight: 400;
   font-size: 16px;
   color: #161722;
 }

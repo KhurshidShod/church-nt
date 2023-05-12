@@ -1,29 +1,84 @@
 @use '../utils/mixin' as mixin;
+@use '../utils/variables' as var;
+@use "../base/typography";
 
 header {
-  background-color: green !important;
+  background-color: var.$black-header !important;
   width: 100%;
   height: 100px;
+  font-family: "Roboto Condensed";
   nav{
   @include mixin.df(center, center, row);
-    gap: 5rem;
+    gap: 80px;
+    @media (max-width: 1000px) {
+      gap: 30px;
+    }
     width: 100%;
     height: 100%;
-    background-color: red;
     .nav__wrapper-logo{
+      padding: 0 2rem 0 0;
+      height: 100%;
+      @include mixin.df(center, center, row);
+      border-right: 1px solid white;
       img{
         width: 132px;
         height: 26px;
       }
     }
     .nav__wrapper-menu{
-      background-color: red;
       width: calc(100% - 132px);
+      @include mixin.df(space-between, center, row);
+      button{
+        @include mixin.primary-btn(20px 48px);
+      }
       &-list{
         &-item{
           float: left;
-          margin: 1rem;
+          margin: 1.5rem;
+          font-size: var.$h6;
           text-transform: uppercase;
+          color: white;
+          font-weight: 400;
+          cursor: pointer;
+          padding: 5px;
+          position: relative;
+          &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            border-radius: 5px;
+            background-color: white;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+}
+          &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0%;
+            height: 2px;
+            border-radius: 5px;
+            background-color: white;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+          }
+          &:hover::before,
+          &:hover::after {
+            transition: .3s linear;
+            width: 50%;
+            -webkit-transition: .3s linear;
+            -moz-transition: .3s linear;
+            -ms-transition: .3s linear;
+            -o-transition: .3s linear;
+}
         }
       }
     }

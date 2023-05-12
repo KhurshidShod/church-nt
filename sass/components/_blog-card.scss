@@ -30,6 +30,7 @@
             max-width: 302px;
             padding: 48px 32px;
             background-color: var.$light-orange;
+            box-shadow: inset 0 -15px 0px 0px rgba(255, 208, 160, 0.8);
             transition: 0.8s;
             box-shadow: inset 0 -15px 0px -0px rgba(255, 208, 160, 0.8);
             &:hover {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +19,14 @@ textarea:focus {
   outline: none;
 }
 
+li {
+  list-style: none;
+}
+
 button {
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 .container {
@@ -44,7 +50,49 @@ header button {
   -o-border-radius: 12px;
   background-color: #ffd2a4;
   color: #1c1d28;
+  font-family: "Roboto Condensed";
 }
 header button:hover {
   background-color: #f2c79b;
+}
+
+.container2 {
+  background-image: url(../../images/sermons/background.png);
+  background-size: cover;
+  background-position: center;
+  max-height: 432px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.container2 .sermons_header {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  justify-content: flex-start;
+}
+.container2 .sermons_header_p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.5px;
+  color: #232536;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  padding-bottom: 16px;
+}
+.container2 .sermons_header_h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #161722;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  transition: 0.5s;
+}
+.container2 .sermons_header_h2:hover {
+  font-size: 44px;
 }

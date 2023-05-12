@@ -20,6 +20,7 @@
   &:hover {
     background-color: #f2c79b;
   }
+  font-family: 'Roboto Condensed';
 }
 
 @mixin secondary-btn {
@@ -41,6 +42,7 @@
   line-height: $height;
   color: $color;
   text-transform: uppercase;
+  font-family: 'Roboto Condensed';
 }
 
 @mixin title-1 {
@@ -65,4 +67,14 @@
 
 @mixin title-6 {
   @include title(400, var.$h6, 19px);
+}
+
+@mixin containerg{
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  
 }

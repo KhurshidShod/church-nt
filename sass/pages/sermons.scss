@@ -1,2 +1,57 @@
+@use '../global';
 @use '../components/top-sermon';
-@use "../global"
+@use '../base/typography';
+@use '../layout/container' as cont ;
+@use '../utils/mixin' as var;
+
+
+.container2{
+    background-image: url(../../images/sermons/background.png);
+    background-size: cover;
+    background-position: center;
+    max-height: 432px;
+    height: 100vh;
+    width: 100vw;
+     display: flex;
+     align-items: center;
+
+    
+    
+     
+    .sermons_header {
+       @include var.containerg;
+       justify-content: flex-start;
+        
+        
+        &_p{
+            @include var.title(700, 16px, 18.5px, #232536);
+            padding-bottom: 16px;
+        
+
+    
+        }
+        &_h2{
+            @include var.title-3;
+            transition: 0.5s;
+            
+        }
+        &_h2:hover{
+            font-size: 44px;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .sermons_header{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+    .sermons_header .sermons_header_h2{
+        font-size: 30px;
+    }
+}
+
+

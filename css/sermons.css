@@ -182,6 +182,7 @@ header nav .nav__wrapper-menu button {
   -o-border-radius: 12px;
   background-color: #ffd2a4;
   color: #1c1d28;
+  font-family: "Roboto Condensed";
 }
 header nav .nav__wrapper-menu button:hover {
   background-color: #f2c79b;
@@ -296,4 +297,57 @@ header nav .nav__wrapper-menu-list-item:hover::before, header nav .nav__wrapper-
   -moz-transition: 0.3s linear;
   -ms-transition: 0.3s linear;
   -o-transition: 0.3s linear;
+}
+
+.container2 {
+  background-image: url(../../images/sermons/background.png);
+  background-size: cover;
+  background-position: center;
+  max-height: 432px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.container2 .sermons_header {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  justify-content: flex-start;
+}
+.container2 .sermons_header_p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.5px;
+  color: #232536;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  padding-bottom: 16px;
+}
+.container2 .sermons_header_h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #161722;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  transition: 0.5s;
+}
+.container2 .sermons_header_h2:hover {
+  font-size: 44px;
+}
+
+@media (max-width: 450px) {
+  .sermons_header {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .sermons_header .sermons_header_h2 {
+    font-size: 30px;
+  }
 }

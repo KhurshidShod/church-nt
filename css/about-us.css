@@ -182,6 +182,7 @@ header nav .nav__wrapper-menu button {
   -o-border-radius: 12px;
   background-color: #ffd2a4;
   color: #1c1d28;
+  font-family: "Roboto Condensed";
 }
 header nav .nav__wrapper-menu button:hover {
   background-color: #f2c79b;

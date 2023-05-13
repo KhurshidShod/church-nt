@@ -554,6 +554,7 @@ main .serving__world {
   background-size: cover;
   font-family: "Roboto Condensed";
   text-transform: uppercase;
+  position: relative;
 }
 @media (max-width: 1000px) {
   main .serving__world {

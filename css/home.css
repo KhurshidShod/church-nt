@@ -935,6 +935,7 @@ footer .footer__wrapper-part-form button:hover {
   align-items: center;
   flex-direction: column;
   font-family: "Roboto Condensed";
+  background-color: white;
 }
 .component2__container h2 {
   font-weight: 700;

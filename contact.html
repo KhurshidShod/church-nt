@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/contact.min.css">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css" >
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css" >
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css" >
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
-</head>
-<body>
-  <div class="cursor">
-    <div class="cursor__inner"></div>
-  </div>
-  <div class="loader">
-    <img src="images/home/loader.gif" alt="">
-  </div>
-  <header>
-    <nav class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contact.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+    />
+  </head>
+  <body>
+    <div class="cursor">
+      <div class="cursor__inner"></div>
+    </div>
+    <div class="loader">
+      <img src="images/home/loader.gif" alt="" />
+    </div>
+    <header>
+      <nav class="container">
         <div class="nav__wrapper-logo">
-          <img src="images/home/Logo.png" alt="">
+          <img src="images/home/Logo.png" alt="" />
         </div>
         <div id="navMenu" class="nav__wrapper-menu">
           <ul class="nav__wrapper-menu-list">
-            <li id="list-item" class="nav__wrapper-menu-list-item"><a href="/">home</a></li>
-            <li id="list-item" class="nav__wrapper-menu-list-item"><a href="about-us.html">about us</a></li>
-            <li id="list-item" class="nav__wrapper-menu-list-item"><a href="sermons.html">sermon</a></li>
-            <li id="list-item" class="nav__wrapper-menu-list-item"><a href="blog.html">blog</a></li>
-            <li id="closeNav" class="nav__wrapper-menu-list-item"><i class="fa-solid fa-xmark"></i></li>
+            <li id="list-item" class="nav__wrapper-menu-list-item">
+              <a href="/">home</a>
+            </li>
+            <li id="list-item" class="nav__wrapper-menu-list-item">
+              <a href="about-us.html">about us</a>
+            </li>
+            <li id="list-item" class="nav__wrapper-menu-list-item">
+              <a href="sermons.html">sermon</a>
+            </li>
+            <li id="list-item" class="nav__wrapper-menu-list-item">
+              <a href="blog.html">blog</a>
+            </li>
+            <li id="closeNav" class="nav__wrapper-menu-list-item">
+              <i class="fa-solid fa-xmark"></i>
+            </li>
           </ul>
           <div>
             <a href="contact.html"><button>contact us</button></a>
@@ -43,8 +65,74 @@
           <span></span>
           <span></span>
         </div>
-    </nav>
-  </header>
-</body>
-<script src="js/main.js"></script>
+      </nav>
+    </header>
+    <main>
+      <section id="contact-home">
+        <div class="container">
+          <div class="home-row">
+            <div>
+              <p>Contact</p>
+              <h1>Get in touch with our CHURCH</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="form">
+        <div class="container">
+          <h1 class="content-title">Contact form:</h1>
+          <div class="form-row">
+            <div class="left-content">
+              <div>
+                <div class="form-values">
+                  <input
+                    type="text"
+                    placeholder="Your full Name"
+                    class="form-input"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Your Email"
+                    class="form-input"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Query Related"
+                    class="form-input"
+                  />
+                  <textarea
+                    placeholder="Message"
+                    class="form-textarea"
+                  ></textarea>
+                  <button class="form-btn">Send Message</button>
+                </div>
+              </div>
+            </div>
+            <div class="right-content">
+              <div>
+                <div class="form-data">
+                  <p>Address</p>
+                  <h1>NH 234 Public Square San Francisco 65368</h1>
+                </div>
+                <div class="form-data">
+                  <p>Contact Details</p>
+                  <h1>(480) 555-0103</h1>
+                  <h1>finsweet@example.com</h1>
+                </div>
+                <div class="form-data">
+                  <p>Find us here</p>
+                  <div>
+                    <img src="./images/contact/facebook.svg" alt="" />
+                    <img src="./images/contact/twitter.svg" alt="" />
+                    <img src="./images/contact/linkedin.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="js/main.js"></script>
 </html>

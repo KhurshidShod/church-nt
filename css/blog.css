@@ -370,6 +370,7 @@ footer .footer__wrapper {
   justify-content: space-between;
   align-items: start;
   flex-direction: row;
+  background-color: green;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -430,6 +431,7 @@ footer .footer__wrapper-part ul li {
 }
 footer .footer__wrapper-part ul li:first-child {
   font-size: 16px;
+  margin-top: 0;
 }
 footer .footer__wrapper-part h1 {
   max-width: 377px;

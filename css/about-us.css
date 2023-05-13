@@ -370,6 +370,7 @@ footer .footer__wrapper {
   justify-content: space-between;
   align-items: start;
   flex-direction: row;
+  background-color: green;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -430,6 +431,7 @@ footer .footer__wrapper-part ul li {
 }
 footer .footer__wrapper-part ul li:first-child {
   font-size: 16px;
+  margin-top: 0;
 }
 footer .footer__wrapper-part h1 {
   max-width: 377px;
@@ -544,7 +546,6 @@ footer .footer__wrapper-part-form button:hover {
 }
 
 main .serving__world {
-  min-height: 60vh;
   padding-top: 150px;
   padding-bottom: 150px;
   width: 100%;
@@ -553,6 +554,7 @@ main .serving__world {
   background-size: cover;
   font-family: "Roboto Condensed";
   text-transform: uppercase;
+  position: relative;
 }
 @media (max-width: 1000px) {
   main .serving__world {
@@ -588,8 +590,9 @@ main .love__compassion {
   padding-top: 150px;
   padding-bottom: 150px;
   background-color: rgb(254, 254, 254);
-  min-height: 100vh;
   width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   text-transform: uppercase;
   font-family: "roboto condensed";
 }
@@ -742,7 +745,8 @@ body.dark main .love__compassion-articles .love__compassion-article-p2 {
 main .benefits {
   background-color: rgb(254, 254, 254);
   width: 100%;
-  min-height: 200vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   font-family: "roboto condensed";
   text-transform: uppercase;
 }
@@ -848,8 +852,9 @@ main .benefits__rows-row-content:first-child, main .benefits__rows-row-content:n
 main .our__team {
   width: 100%;
   font-family: "roboto condensed";
-  min-height: 85vh;
   text-transform: uppercase;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: white;
   padding-top: 3rem;
   padding-bottom: 3rem;

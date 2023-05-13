@@ -11,8 +11,8 @@
     max-height: 432px;
     height: 100vh;
     width: 100vw;
-     display: flex;
-     align-items: center;
+    display: flex;
+    align-items: center;
     .sermons_header {
        @include var.containerg;
        justify-content: flex-start;

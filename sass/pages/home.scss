@@ -2,9 +2,6 @@
 @use '../components/top-sermon';
 @use "../layout/header";
 @use "../components/blog-card";
-<<<<<<< HEAD
-@use "../components/sermon-card";
-=======
 @use "../base/typography";
 @use "../utils/variables" as var;
 @use "../utils/mixin" as mixin;
@@ -198,4 +195,3 @@ main{
         }
     }
 }
->>>>>>> ed43245f4ebac7427b5061a40ce96375d5fd3eea

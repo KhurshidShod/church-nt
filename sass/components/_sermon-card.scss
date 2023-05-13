@@ -9,8 +9,16 @@
         @include mix.title-2;
         padding-bottom: 64px;
     }
+    @media (max-width:400px) {
+        text-align: center;
+    }
     &__box {
-        display: flex;
+        @include mix.df(center, center, row);
+        gap: 24px;
+        @media (max-width:1100px) {
+            flex-wrap: wrap;
+            text-align: left;
+        }
         &--card {
             @include mix.df(center, center, column);
             max-width: 302px;
@@ -106,3 +114,90 @@
         }
     }
 }
+
+
+
+/* <section id="component2">
+        <div class="component2__container container">
+          <h2>View All Events</h2>
+          <div class="component2__container__box">
+            <div class="component2__container__box--card">
+              <div class="date">
+                <p>20</p>
+                <p>JULY</p>
+              </div>
+              <div>
+                <p>Upcoming Event</p>
+                <h5>100 random acts of kindness</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="mini">
+                  <img src="./images/home/clock-icon.svg" alt="" />
+                  <p>Friday 23:39 IST Saturday 11:20 ISD</p>
+                </div>
+                <div class="mini">
+                  <img src="./images/home/icon-event.svg" alt="" />
+                  <p>No 233 Main St. New York, United States</p>
+                </div>
+              </div>
+            </div>
+            <div class="component2__container__box--card">
+              <div class="date">
+                <p>20</p>
+                <p>JULY</p>
+              </div>
+              <div>
+                <p>Upcoming Event</p>
+                <h5>100 random acts of kindness</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="mini">
+                  <img src="./images/home/clock-icon.svg" alt="" />
+                  <p>Friday 23:39 IST Saturday 11:20 ISD</p>
+                </div>
+                <div class="mini">
+                  <img src="./images/home/icon-event.svg" alt="" />
+                  <p>No 233 Main St. New York, United States</p>
+                </div>
+              </div>
+            </div>
+            <div class="component2__container__box--card">
+              <div class="date">
+                <p>20</p>
+                <p>JULY</p>
+              </div>
+              <div>
+                <p>Upcoming Event</p>
+                <h5>100 random acts of kindness</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="mini">
+                  <img src="./images/home/clock-icon.svg" alt="" />
+                  <p>Friday 23:39 IST Saturday 11:20 ISD</p>
+                </div>
+                <div class="mini">
+                  <img src="./images/home/icon-event.svg" alt="" />
+                  <p>No 233 Main St. New York, United States</p>
+                </div>
+              </div>
+            </div>
+            <div class="component2__container__box--card">
+              <div class="date">
+                <p>20</p>
+                <p>JULY</p>
+              </div>
+              <div>
+                <p>Upcoming Event</p>
+                <h5>100 random acts of kindness</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="mini">
+                  <img src="./images/home/clock-icon.svg" alt="" />
+                  <p>Friday 23:39 IST Saturday 11:20 ISD</p>
+                </div>
+                <div class="mini">
+                  <img src="./images/home/icon-event.svg" alt="" />
+                  <p>No 233 Main St. New York, United States</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+*/

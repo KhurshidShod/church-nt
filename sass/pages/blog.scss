@@ -10,8 +10,9 @@ main{
     padding: 128px 0px;
 
     .recent_post{
-    @include var.containerg;
+   @include var.containerg;
    align-items: center;
+   
    
    &_header{
     margin-bottom: 64px;

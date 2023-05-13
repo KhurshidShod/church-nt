@@ -1,6 +1,7 @@
 @use '../global';
 @use '../utils/variables' as var;
 @use '../base/typography';
+@use "../utils/mixin" as mixin;
 
 main {
     .serving__world {
@@ -17,31 +18,39 @@ main {
             & {
                 text-align: center;
             }
-            
+            .serving__world-p {
+                padding-right: 110px;
+            }
+            .serving__world-h1 {
+                padding-right: 110px;
+            }
         }
         .serving__world-p {
             font-weight: 700;
             font-size: var.$h6;
             color: var.$black;
+            padding-left: 110px;
         }
         .serving__world-h1 {
             font-weight: 700;
             font-size: var.$h1;
             padding-top: 15px;
+            padding-left: 110px;
             color: var.$black;
         }
     }
     .love__compassion {
         padding-top: 150px;
         padding-bottom: 150px;
-        font-family: "roboto condensed";
         background-color: rgb(254, 254, 254);
         min-height: 100vh;
         width: 100%;
         text-transform: uppercase;
+        font-family: "roboto condensed";
         &-content {
             @media (max-width: 1000px) {
                 text-align: center;
+                width: 100%;
             }
             text-align: center;
             &-p {
@@ -64,12 +73,13 @@ main {
             }
         }
         &-images {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include mixin.df(center, center, row);
             padding-bottom: 60px;
+            flex-wrap: wrap;
             img{
                 width: calc(100% / 3 - 5rem);
+                min-width: 250px;
+                flex-grow: 1;
                 @media (max-width: 1000px) {
                     width: calc(100% / 3 - 1rem);
 
@@ -84,16 +94,22 @@ main {
                 &:hover{
                     width: calc(100% / 3);
                     height: 500px;
+                    @media (max-width: 855px) {
+                        width: calc(100% / 3 - 1rem) !important;
+                        height: 384px !important;
+                    }
                 }
             }
         }
         &-articles {
+            width: 100%;
             @media (max-width: 600px) {
                 .love__compassion-article:first-child {
                     padding-bottom: 50px;
                 }
                 flex-direction: column;
                 text-align: center;
+                width: 100%;
             }
             display: flex;
             align-items: center;
@@ -102,6 +118,11 @@ main {
                 width: 36%;
                 margin-left: 40px;
                 margin-right: 40px;
+                @media (max-width: 600px) {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
                 &-p {
                     font-weight: 400;
                     font-size: var.$h6;
@@ -118,6 +139,82 @@ main {
                     font-weight: 400;
                     font-size: var.$h6;
                     color: var.$black;
+                }
+            }
+        }
+    }
+    .benefits {
+        @media (max-width: 900px) {
+            .benefits__content {
+                text-align: center;
+            }
+            .benefits__content:first-child, .benefits__content:nth-child(3) {
+                padding-bottom: 50px;
+            }
+            .benefits__rows-row {
+                &-content {
+                    width: 120%;
+                }
+                &-img {
+                    width: 500px;
+                }
+                &-content:nth-child(2), &-content:last-child {
+                    padding-right: 90px;
+                }
+                &-content:first-child, &-content:nth-child(3) {
+                    padding-left: 90px;
+                }
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 550px) {
+            .benefits__rows-row-img {
+                display: none;
+            }
+        }
+        width: 100%;
+        min-height: 200vh;
+        font-family: 'roboto condensed';
+        text-transform: uppercase;
+        &__content {
+            &-p {
+                font-weight: 400;
+                font-size: var.$h6;
+                text-align: center;
+                color: var.$black;
+                padding-bottom: 15px;
+            }
+            &-h1 {
+                font-size: var.$h2;
+                color: var.$black;
+                font-weight: 700;
+                text-align: center;
+                padding-bottom: 65px;
+            }
+        }
+        &__rows {
+            &-row {
+                @include mixin.df(center, center, row);
+                padding-bottom: 100px;
+                &-content {
+                    width: 45%;
+                    &-h2 {
+                        font-weight: 700;
+                        font-size: var.$h4;
+                        color: var.$black;
+                        padding-bottom: 15px;
+                    }
+                    &-p {
+                        font-weight: 400;
+                        font-size: var.$h6;
+                        color: var.$black;
+                    }
+                }
+                &-content:nth-child(2), &-content:last-child {
+                    padding-left: 90px;
+                }
+                &-content:first-child, &-content:nth-child(3) {
+                    padding-right: 90px;
                 }
             }
         }

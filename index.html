@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css" >
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
   </head>
-  <body>
+  <body class="dark">
     <div class="cursor">
       <div class="cursor__inner"></div>
     </div>
@@ -31,7 +31,12 @@
               <li id="list-item" class="nav__wrapper-menu-list-item"><a href="blog.html">blog</a></li>
               <li id="closeNav" class="nav__wrapper-menu-list-item"><i class="fa-solid fa-xmark"></i></li>
             </ul>
-            <a href="contact.html"><button>contact us</button></a>
+            <div>
+              <a href="contact.html"><button>contact us</button></a>
+              <div id="themeToggle" class="themeToggle">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+              </div>
+            </div>
           </div>
           <div id="openNav" class="openNav">
             <span></span>
@@ -91,7 +96,9 @@
           <div class="container">
             <div class="love__wrapper">
               <div class="love__wrapper-content">
-                <div class="love__wrapper-content-card"></div>
+                <div class="love__wrapper-content-card">
+
+                </div>
                 <div class="love__wrapper-content-card"></div>
                 <div class="love__wrapper-content-card"></div>
               </div>
@@ -99,6 +106,42 @@
           </div>
         </section>
     </main>
+    <footer>
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__wrapper-part">
+            <img src="images/home/Logoorange.png" alt="">
+            <p>© Copyright Finsweet 2022</p>
+            <p>(480) 555-0103</p>
+            <p>4517 Washington Ave.</p>
+            <p>finsweet@example.com</p>
+          </div>
+          <div class="footer__wrapper-part">
+            <ul>
+              <li>Quicklinks</li>
+              <li>About us</li>
+              <li>Sermons</li>
+              <li>Events</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="footer__wrapper-part">
+            <p>Connect</p>
+            <div class="footer__wrapper-part-socials">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer__wrapper-part">
+            <h1>Subscribe to get Latest Updates and News</h1>
+            <div class="footer__wrapper-part-form">
+              <input type="text" name="" id=""><button>subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="js/main.js"></script>
 </html>

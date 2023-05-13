@@ -97,8 +97,8 @@ main{
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: var.$bgColor;
-    body.dark{
-        background-color: black;
+    body.dark &{
+        background-color: var.$black-header !important;
     }
     &__wrapper{
         width: 100%;
@@ -108,22 +108,22 @@ main{
             color: var.$black;
             font-weight: 400;
             text-transform: uppercase;
-            body.dark{
+            body.dark &{
                 color: var.$white;
             }
         }
         h1{
             font-size: var.$h1;
             color: var.$black;
+            body.dark &{
+                color: var.$white;
+            }
             font-weight: 700;
             margin-top: 1rem;
             margin-bottom: 64px;
             @media (max-width: 550px) {
                 font-size: var.$h2;
                 text-align: center;
-            }
-            body.dark{
-                color: var.$white;
             }
             text-transform: uppercase;
         }
@@ -138,10 +138,16 @@ main{
         min-height: 350px;
         flex-grow: .5;
         z-index: 2;
+        body.dark & {
+            background-color: var.$black;
+        }
             &-hover{
                 width: 100%;
                 height: 5%;
                 background-color: var.$primary-color;
+                body.dark & {
+                    background-color: var.$black-header;
+                }
                 position: absolute;
                 left: 0;
                 transition: height .3s linear;
@@ -162,6 +168,9 @@ main{
                 height: 48px;
                 border-radius: 50%;
                 background-color: var.$primary-color;
+                body.dark & {
+                    background-color: var.$white;
+                }
                 -webkit-border-radius: 50%;
                 -moz-border-radius: 50%;
                 -ms-border-radius: 50%;
@@ -183,6 +192,9 @@ main{
             h1{
                 font-size: var.$h4;
                 color: var.$black;
+                body.dark &{
+                    color: var.$white;
+                }
                 font-weight: 700;
                 letter-spacing: -1%;
                 margin-bottom: 8px;
@@ -191,6 +203,9 @@ main{
                 font-size: var.$h6;
                 color: var.$black;
                 font-weight: 400;
+                body.dark &{
+                    color: var.$white;
+                }
             }
         }
         }

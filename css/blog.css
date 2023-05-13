@@ -547,17 +547,22 @@ footer .footer__wrapper-part-form button:hover {
   height: 300px;
 }
 
-.component3__container {
+#component3 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: white;
+}
+body.dark #component3 {
+  background-color: #0D0D0D;
+}
+#component3 .component3__container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: "Roboto Condensed";
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: white;
 }
-.component3__container h6 {
+#component3 .component3__container h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -565,7 +570,10 @@ footer .footer__wrapper-part-form button:hover {
   text-transform: uppercase;
   font-family: "Roboto Condensed";
 }
-.component3__container h2 {
+body.dark #component3 .component3__container h6 {
+  color: #fff;
+}
+#component3 .component3__container h2 {
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
@@ -575,24 +583,27 @@ footer .footer__wrapper-part-form button:hover {
   padding-top: 16px;
   padding-bottom: 64px;
 }
+body.dark #component3 .component3__container h2 {
+  color: #fff;
+}
 @media (max-width: 1200px) {
-  .component3__container {
+  #component3 .component3__container {
     text-align: center;
   }
 }
-.component3__container__box {
+#component3 .component3__container__box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 @media (max-width: 1100px) {
-  .component3__container__box {
+  #component3 .component3__container__box {
     flex-wrap: wrap;
     text-align: left;
   }
 }
-.component3__container__box--card {
+#component3 .component3__container__box--card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -604,30 +615,39 @@ footer .footer__wrapper-part-form button:hover {
   transition: 0.8s;
   position: relative;
 }
+body.dark #component3 .component3__container__box--card {
+  background-color: #161722;
+}
+body.dark #component3 .component3__container__box--card {
+  box-shadow: inset 0 -15px 0px 0px #0D0D0D;
+}
 @media (max-width: 1100px) {
-  .component3__container__box--card {
+  #component3 .component3__container__box--card {
     width: 100%;
     max-width: 100%;
   }
 }
 @media (max-width: 550px) {
-  .component3__container__box--card {
+  #component3 .component3__container__box--card {
     padding: 48px 32px;
   }
 }
-.component3__container__box--card:hover {
+#component3 .component3__container__box--card:hover {
   box-shadow: inset 0 -600px 10px -10px rgba(255, 208, 160, 0.8);
 }
-.component3__container__box--card:hover h5 {
+body.dark #component3 .component3__container__box--card:hover {
+  box-shadow: inset 0 -600px 10px -10px #0D0D0D;
+}
+#component3 .component3__container__box--card:hover h5 {
   color: #fff;
   font-size: 24px;
 }
-.component3__container__box--card .date {
+#component3 .component3__container__box--card .date {
   position: absolute;
   top: 24px;
   right: 26px;
 }
-.component3__container__box--card .date p:first-child {
+#component3 .component3__container__box--card .date p:first-child {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
@@ -637,7 +657,10 @@ footer .footer__wrapper-part-form button:hover {
   text-transform: uppercase;
   color: #161722;
 }
-.component3__container__box--card .date p:last-child {
+body.dark #component3 .component3__container__box--card .date p:first-child {
+  color: #fff;
+}
+#component3 .component3__container__box--card .date p:last-child {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
@@ -646,7 +669,10 @@ footer .footer__wrapper-part-form button:hover {
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
-.component3__container__box--card h5 {
+body.dark #component3 .component3__container__box--card .date p:last-child {
+  color: #fff;
+}
+#component3 .component3__container__box--card h5 {
   max-width: 210px;
   font-family: "Roboto Condensed";
   font-style: normal;
@@ -658,12 +684,15 @@ footer .footer__wrapper-part-form button:hover {
   color: #161722;
   padding: 16px 0;
 }
+body.dark #component3 .component3__container__box--card h5 {
+  color: #fff;
+}
 @media (max-width: 400px) {
-  .component3__container__box--card h5 {
+  #component3 .component3__container__box--card h5 {
     font-size: 16px;
   }
 }
-.component3__container__box--card p:first-child {
+#component3 .component3__container__box--card p:first-child {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
@@ -676,7 +705,10 @@ footer .footer__wrapper-part-form button:hover {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.component3__container__box--card p:nth-child(3) {
+body.dark #component3 .component3__container__box--card p:first-child {
+  color: #fff;
+}
+#component3 .component3__container__box--card p:nth-child(3) {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
@@ -685,32 +717,41 @@ footer .footer__wrapper-part-form button:hover {
   color: #161722;
   opacity: 0.78;
 }
+body.dark #component3 .component3__container__box--card p:nth-child(3) {
+  color: #fff;
+}
 @media (max-width: 400px) {
-  .component3__container__box--card p:nth-child(3) {
+  #component3 .component3__container__box--card p:nth-child(3) {
     font-size: 12px;
   }
 }
-.component3__container__box--card .mini {
+#component3 .component3__container__box--card .mini {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
   gap: 16px;
 }
-.component3__container__box--card .mini:nth-child(4) {
+#component3 .component3__container__box--card .mini:nth-child(4) {
   padding-top: 32px;
   padding-bottom: 16px;
 }
-.component3__container__box--card .mini:nth-child(4) p {
+#component3 .component3__container__box--card .mini:nth-child(4) p {
   width: 137px;
 }
-.component3__container__box--card .mini:nth-child(5) {
+body.dark #component3 .component3__container__box--card .mini:nth-child(4) p {
+  color: #fff;
+}
+#component3 .component3__container__box--card .mini:nth-child(5) {
   padding-top: 20px;
 }
-.component3__container__box--card .mini:nth-child(5) p {
+#component3 .component3__container__box--card .mini:nth-child(5) p {
   width: 184px;
 }
-.component3__container__box--card button {
+body.dark #component3 .component3__container__box--card .mini:nth-child(5) p {
+  color: #fff;
+}
+#component3 .component3__container__box--card button {
   padding: 24px 64px;
   border-radius: 12px;
   font-weight: 400;
@@ -726,23 +767,23 @@ footer .footer__wrapper-part-form button:hover {
   color: #ffd2a4;
   margin-top: 32px;
 }
-.component3__container__box--card button:hover {
+#component3 .component3__container__box--card button:hover {
   color: #fff;
 }
-.component3__container__box--left {
+#component3 .component3__container__box--left {
   height: 512px;
   min-height: 512px;
   width: 100%;
 }
 @media (max-width: 1300px) {
-  .component3__container__box--left img {
+  #component3 .component3__container__box--left img {
     width: 100%;
     height: 100%;
     min-height: 512px;
   }
 }
 @media (max-width: 550px) {
-  .component3__container__box--left img {
+  #component3 .component3__container__box--left img {
     display: none;
   }
 }

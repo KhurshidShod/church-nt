@@ -28,8 +28,6 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-<<<<<<< HEAD
-=======
 }
 
 .cursor {
@@ -72,7 +70,6 @@ button {
   -moz-transition: transform 0.1s linear;
   -ms-transition: transform 0.1s linear;
   -o-transition: transform 0.1s linear;
->>>>>>> 36f58bf69ccdc0a3ea9251006528eebb28d09165
 }
 
 .container {
@@ -353,6 +350,51 @@ header nav .nav__wrapper-menu-list-item:hover::before, header nav .nav__wrapper-
   -moz-transition: 0.3s linear;
   -ms-transition: 0.3s linear;
   -o-transition: 0.3s linear;
+}
+
+footer {
+  width: 100%;
+  max-height: 312px !important;
+  background-color: #161722;
+  font-family: "Roboto Condensed";
+  padding: 110px 64px;
+}
+footer .footer__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+footer .footer__wrapper-part {
+  max-width: 500px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: green;
+}
+footer .footer__wrapper-part p {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+footer .footer__wrapper-part img {
+  width: 140px;
+  height: 28px;
+}
+footer .footer__wrapper-part ul li {
+  margin: 1rem;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+footer .footer__wrapper-part ul li:first-child {
+  font-weight: 600;
 }
 
 .loader {

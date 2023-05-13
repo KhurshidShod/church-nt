@@ -132,11 +132,6 @@ main{
                 color: var.$white;
             }
         } 
-
-        h2:hover{
-                transform: matrix(1, 0, 1, 0, 1, 0);
-    
-        }
     }
 
     .all_posts_blog{
@@ -188,14 +183,6 @@ main{
 
             
         }
-        .blog_content:hover{
-            background: #FFD0A0;
-            transform: matrix(1, 0, 0, -1, 0, 1);
-
-        }
-
-
-        
     }
 }
 

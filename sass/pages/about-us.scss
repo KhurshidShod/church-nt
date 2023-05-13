@@ -28,7 +28,7 @@ main {
         .serving__world-p {
             font-weight: 700;
             font-size: var.$h6;
-            color: var.$black;
+            color: var.$black; body.dark &{color: var.$black;}
             padding-left: 110px;
         }
         .serving__world-h1 {
@@ -36,7 +36,7 @@ main {
             font-size: var.$h1;
             padding-top: 15px;
             padding-left: 110px;
-            color: var.$black;
+            color: var.$black; body.dark &{color: var.$black;}
         }
     }
     .love__compassion {
@@ -58,18 +58,18 @@ main {
                 font-weight: 700;
                 font-size: var.$h6;
                 padding-bottom: 15px;
-                color: var.$black; body.dark &{color: var.$white;};
+                color: var.$black; body.dark &{color: var.$white;} body.dark &{color: var.$white;};
             }
             &-h1 {
                 font-family: 700;
                 font-size: var.$h1;
-                color: var.$black; body.dark &{color: var.$white;};
+                color: var.$black; body.dark &{color: var.$white;} body.dark &{color: var.$white;};
                 padding-bottom: 30px;
             }
             &-p2 {
                 font-weight: 400;
                 font-size: var.$h6;
-                color: var.$black; body.dark &{color: var.$white;};
+                color: var.$black; body.dark &{color: var.$white;} body.dark &{color: var.$white;};
                 padding-bottom: 45px;
             }
         }
@@ -126,19 +126,19 @@ main {
                 &-p {
                     font-weight: 400;
                     font-size: var.$h6;
-                    color: var.$black; body.dark &{color: var.$white;};
+                    color: var.$black; body.dark &{color: var.$white;} body.dark &{color: var.$white;};
                     padding-bottom: 15px;
                 }
                 &-h1 {
                     font-weight: 700;
-                    color: var.$black; body.dark &{color: var.$white;};
+                    color: var.$black; body.dark &{color: var.$white;} body.dark &{color: var.$white;};
                     font-size: var.$h4;
                     padding-bottom: 15px;
                 }
                 &-p2 {
                     font-weight: 400;
                     font-size: var.$h6;
-                    color: var.$black; body.dark &{color: var.$white;};
+                    color: var.$black; body.dark &{color: var.$white;} body.dark &{color: var.$white;};
                 }
             }
         }
@@ -185,12 +185,12 @@ main {
                 font-weight: 400;
                 font-size: var.$h6;
                 text-align: center;
-                color: var.$black; body.dark &{color: var.$white;};
+                color: var.$black; body.dark &{color: var.$white;} body.dark &{color: var.$white;};
                 padding-bottom: 15px;
             }
             &-h1 {
                 font-size: var.$h2;
-                color: var.$black; body.dark &{color: var.$white;};
+                color: var.$black; body.dark &{color: var.$white;} body.dark &{color: var.$white;};
                 font-weight: 700;
                 text-align: center;
                 padding-bottom: 65px;
@@ -205,13 +205,13 @@ main {
                     &-h2 {
                         font-weight: 700;
                         font-size: var.$h4;
-                        color: var.$black; body.dark &{color: var.$white;};
+                        color: var.$black; body.dark &{color: var.$white;} body.dark &{color: var.$white;};
                         padding-bottom: 15px;
                     }
                     &-p {
                         font-weight: 400;
                         font-size: var.$h6;
-                        color: var.$black; body.dark &{color: var.$white;};
+                        color: var.$black; body.dark &{color: var.$white;} body.dark &{color: var.$white;};
                     }
                 }
                 &-content:nth-child(2), &-content:last-child {
@@ -228,17 +228,24 @@ main {
         font-family: 'roboto condensed';
         min-height: 85vh;
         text-transform: uppercase;
+        background-color: var.$bgColor;
+        body.dark &{
+            background-color: var.$black-header;
+        }
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         &-content {
             text-align: center;
             &-p {
                 font-weight: 400;
                 font-size: var.$h6;
-                color: var.$black;
+                color: var.$black; body.dark &{color: var.$white;}
                 padding-bottom: 15px;
             }
             &-h1 {
                 font-weight: 700;
-                color: var.$black;
+                color: var.$black; body.dark &{color: var.$white;}
+
                 font-size: var.$h1;
                 padding-bottom: 60px;
             }
@@ -257,6 +264,18 @@ main {
             @include mixin.df(space-between, center, row);
             &-row {
                 background-color: var.$grey;
+                body.dark &{
+                    background-color: var.$black-header;
+                }
+                body.dark &:hover{
+                    background-color: var.$black;
+                }
+                &:hover {
+                    background-color: var.$primary-color;
+                    h2, h3, i {
+                        color: var.$white;
+                    }
+                }
                 padding: 70px 60px;
                 text-align: center;
                 transition: 0.5s;
@@ -268,27 +287,22 @@ main {
                     transition: 0.5s;
                     font-weight: 700;
                     font-size: var.$h5;
-                    color: var.$black;
+                    color: var.$black; body.dark &{color: var.$white;}
                     margin-top: 20px;
                 }
                 &-h3 {
                     transition: 0.5s;
                     font-weight: 400;
                     font-size: var.$h6;
-                    color: var.$black;
+                    color: var.$black; body.dark &{color: var.$white;}
                     margin-top: 10px;
                 }
                 i {
                     transition: 0.5s;
                     margin-top: 15px;
                     margin-left: 10px;
+                    body.dark &{color: var.$white;}
                     cursor: pointer;
-                }
-            }
-            &-row:hover {
-                background-color: var.$primary-color;
-                h2, h3, i {
-                    color: var.$white;
                 }
             }
         }

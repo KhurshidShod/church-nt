@@ -6,22 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/home.min.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css" >
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css" >
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css" >
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
   </head>
   <body>
+    <div class="cursor">
+      <div class="cursor__inner"></div>
+    </div>
+    <div class="loader">
+      <img src="images/home/loader.gif" alt="">
+    </div>
     <header>
       <nav class="container">
-        <button>Contact us</button>
+          <div class="nav__wrapper-logo">
+            <img src="images/home/Logo.png" alt="">
+          </div>
+          <div id="navMenu" class="nav__wrapper-menu">
+            <ul class="nav__wrapper-menu-list">
+              <li id="list-item" class="nav__wrapper-menu-list-item"><a href="/">home</a></li>
+              <li id="list-item" class="nav__wrapper-menu-list-item"><a href="about-us.html">about us</a></li>
+              <li id="list-item" class="nav__wrapper-menu-list-item"><a href="sermons.html">sermon</a></li>
+              <li id="list-item" class="nav__wrapper-menu-list-item"><a href="blog.html">blog</a></li>
+              <li id="closeNav" class="nav__wrapper-menu-list-item"><i class="fa-solid fa-xmark"></i></li>
+            </ul>
+            <a href="contact.html"><button>contact us</button></a>
+          </div>
+          <div id="openNav" class="openNav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
       </nav>
     </header>
     <main>
-      <section>
-        <div class="container">
-          <div class="header">
-            <h6>sub-headline</h6>
-            <h2>a church that's relevant</h2>
+        <section class="hero">
+          <div class="container">
+            <div class="hero__wrapper">
+              <div class="hero__wrapper-content">
+                <h5>Welcome to our CHURCH</h5>
+                <h1>Become a part of our community</h1>
+                <button>Learn more</button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="relevant">
+          <div class="container">
+            <div class="relevant__wrapper">
+              <p>sub-headline</p>
+              <h1>a church that's relevant</h1>
+              <div class="relevant__wrapper-content">
+                <div class="relevant__wrapper-content-card">
+                <div class="relevant__wrapper-content-card-hover"></div>
+                  <div class="relevant__wrapper-content-card-image">
+                    <img src="images/home/filled outline.png" alt="">
+                  </div>
+                  <h1>About us</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="relevant__wrapper-content-card">
+                <div class="relevant__wrapper-content-card-hover"></div>
+                  <div class="relevant__wrapper-content-card-image">
+                    <img src="images/home/Group.png" alt="">
+                  </div>
+                  <h1>Get involved</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="relevant__wrapper-content-card">
+                <div class="relevant__wrapper-content-card-hover"></div>
+                  <div class="relevant__wrapper-content-card-image">
+                    <img src="images/home/Icon.png" alt="">
+                  </div>
+                  <h1>Giving back</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="love">
+          <div class="container">
+            <div class="love__wrapper">
+              <div class="love__wrapper-content">
+                <div class="love__wrapper-content-card"></div>
+                <div class="love__wrapper-content-card"></div>
+                <div class="love__wrapper-content-card"></div>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
   </body>
+  <script src="js/main.js"></script>
 </html>

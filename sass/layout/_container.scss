@@ -2,10 +2,9 @@
 @use "../utils/variables" as var;
 
 .container {
-  max-width: func.container(1440, 110, var.$mobilePadding);
-  margin-left: auto;
-  margin-right: auto;
+  max-width: func.container(1500, 110, var.$mobilePadding);
   padding-left: var.$mobilePadding + px;
   padding-right: var.$mobilePadding + px;
+  margin: 0 auto;
 }
 

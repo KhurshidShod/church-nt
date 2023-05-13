@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
+  cursor: none !important;
 }
 
 *,
@@ -26,30 +28,336 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+<<<<<<< HEAD
+=======
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 100000000000000000;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  -moz-transition: transform 0.1s linear;
+  -ms-transition: transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+}
+.cursor__inner {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 100000000000000000;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  -moz-transition: transform 0.1s linear;
+  -ms-transition: transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+>>>>>>> 36f58bf69ccdc0a3ea9251006528eebb28d09165
 }
 
 .container {
-  max-width: 1260px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1320px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
 }
 
-header button {
+header {
+  background-color: #0D0D0D !important;
+  width: 100%;
+  height: 100px;
+  font-family: "Roboto Condensed";
+  position: fixed;
+  z-index: 9999999;
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+}
+header.shrink {
+  height: 80px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 80px;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1000px) {
+  header nav {
+    gap: 30px;
+  }
+}
+@media (max-width: 850px) {
+  header nav {
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+header nav #openNav {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 850px) {
+  header nav #openNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+header nav #openNav:hover span:nth-child(even) {
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  margin-left: -7px !important;
+}
+header nav #openNav:hover span:nth-child(odd) {
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  margin-right: -7px !important;
+}
+header nav #openNav span {
+  width: 85%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+header nav #openNav span:nth-child(even) {
+  margin-left: 7px;
+}
+header nav #openNav span:nth-child(odd) {
+  margin-right: 7px;
+}
+header nav .nav__wrapper-logo {
+  padding: 0 2rem 0 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-right: 1px solid white;
+}
+@media (max-width: 850px) {
+  header nav .nav__wrapper-logo {
+    border: none;
+  }
+}
+header nav .nav__wrapper-logo img {
+  width: 132px;
+  height: 26px;
+}
+header nav .nav__wrapper-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: calc(100% - 132px);
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 850px) {
+  header nav .nav__wrapper-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    top: -150%;
+    left: 0;
+  }
+}
+header nav .nav__wrapper-menu button {
   padding: 20px 48px;
   border-radius: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  font-family: "Roboto Condensed";
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   background-color: #ffd2a4;
   color: #1c1d28;
+  font-family: "Roboto Condensed";
 }
-header button:hover {
+header nav .nav__wrapper-menu button:hover {
   background-color: #f2c79b;
+}
+@media (max-width: 850px) {
+  header nav .nav__wrapper-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+header nav .nav__wrapper-menu-list-item {
+  float: left;
+  margin: 1.5rem;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+}
+header nav .nav__wrapper-menu-list-item a {
+  color: white;
+}
+@media (max-width: 850px) {
+  header nav .nav__wrapper-menu-list-item {
+    font-size: 24px;
+  }
+  header nav .nav__wrapper-menu-list-item a {
+    color: #161722 !important;
+  }
+}
+header nav .nav__wrapper-menu-list-item:last-child {
+  display: none;
+  transition: transform 0.3s linear;
+  -webkit-transition: transform 0.3s linear;
+  -moz-transition: transform 0.3s linear;
+  -ms-transition: transform 0.3s linear;
+  -o-transition: transform 0.3s linear;
+}
+header nav .nav__wrapper-menu-list-item:last-child:hover:before {
+  width: 0 !important;
+  height: 0 !important;
+  background-color: transparent !important;
+}
+header nav .nav__wrapper-menu-list-item:last-child:hover:after {
+  width: 0 !important;
+  height: 0 !important;
+  background-color: transparent !important;
+}
+@media (max-width: 850px) {
+  header nav .nav__wrapper-menu-list-item:last-child {
+    display: flex;
+    color: #161722;
+    font-size: 40px;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  header nav .nav__wrapper-menu-list-item:last-child:hover {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+  }
+}
+header nav .nav__wrapper-menu-list-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+@media (max-width: 850px) {
+  header nav .nav__wrapper-menu-list-item::before {
+    background-color: black;
+  }
+}
+header nav .nav__wrapper-menu-list-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+@media (max-width: 850px) {
+  header nav .nav__wrapper-menu-list-item::after {
+    background-color: black;
+  }
+}
+header nav .nav__wrapper-menu-list-item:hover::before, header nav .nav__wrapper-menu-list-item:hover::after {
+  transition: 0.3s linear;
+  width: 50%;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+  background-color: black;
+}
+.loader img {
+  width: 300px;
+  height: 300px;
 }

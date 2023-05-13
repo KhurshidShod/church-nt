@@ -305,16 +305,24 @@ main .serving__world {
   main .serving__world {
     text-align: center;
   }
+  main .serving__world .serving__world-p {
+    padding-right: 110px;
+  }
+  main .serving__world .serving__world-h1 {
+    padding-right: 110px;
+  }
 }
 main .serving__world .serving__world-p {
   font-weight: 700;
   font-size: 16px;
   color: #161722;
+  padding-left: 110px;
 }
 main .serving__world .serving__world-h1 {
   font-weight: 700;
   font-size: 64px;
   padding-top: 15px;
+  padding-left: 110px;
   color: #161722;
 }
 main .love__compassion {
@@ -331,6 +339,7 @@ main .love__compassion-content {
 @media (max-width: 1000px) {
   main .love__compassion-content {
     text-align: center;
+    width: 100%;
   }
 }
 main .love__compassion-content-p {
@@ -355,10 +364,14 @@ main .love__compassion-images {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   padding-bottom: 60px;
+  flex-wrap: wrap;
 }
 main .love__compassion-images img {
   width: calc(33.3333333333% - 5rem);
+  min-width: 250px;
+  flex-grow: 1;
   margin: 0.5rem;
   height: 384px;
   transition: 0.3s linear;
@@ -376,7 +389,14 @@ main .love__compassion-images img:hover {
   width: 33.3333333333%;
   height: 500px;
 }
+@media (max-width: 855px) {
+  main .love__compassion-images img:hover {
+    width: calc(33.3333333333% - 1rem) !important;
+    height: 384px !important;
+  }
+}
 main .love__compassion-articles {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,6 +405,7 @@ main .love__compassion-articles {
   main .love__compassion-articles {
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
   main .love__compassion-articles .love__compassion-article:first-child {
     padding-bottom: 50px;
@@ -394,6 +415,13 @@ main .love__compassion-articles .love__compassion-article {
   width: 36%;
   margin-left: 40px;
   margin-right: 40px;
+}
+@media (max-width: 600px) {
+  main .love__compassion-articles .love__compassion-article {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 main .love__compassion-articles .love__compassion-article-p {
   font-weight: 400;
@@ -411,4 +439,79 @@ main .love__compassion-articles .love__compassion-article-p2 {
   font-weight: 400;
   font-size: 16px;
   color: #161722;
+}
+main .benefits {
+  width: 100%;
+  min-height: 200vh;
+  font-family: "roboto condensed";
+  text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  main .benefits .benefits__content {
+    text-align: center;
+  }
+  main .benefits .benefits__content:first-child, main .benefits .benefits__content:nth-child(3) {
+    padding-bottom: 50px;
+  }
+  main .benefits .benefits__rows-row {
+    flex-direction: column;
+  }
+  main .benefits .benefits__rows-row-content {
+    width: 120%;
+  }
+  main .benefits .benefits__rows-row-img {
+    width: 500px;
+  }
+  main .benefits .benefits__rows-row-content:nth-child(2), main .benefits .benefits__rows-row-content:last-child {
+    padding-right: 90px;
+  }
+  main .benefits .benefits__rows-row-content:first-child, main .benefits .benefits__rows-row-content:nth-child(3) {
+    padding-left: 90px;
+  }
+}
+@media (max-width: 550px) {
+  main .benefits .benefits__rows-row-img {
+    display: none;
+  }
+}
+main .benefits__content-p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #161722;
+  padding-bottom: 15px;
+}
+main .benefits__content-h1 {
+  font-size: 48px;
+  color: #161722;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 65px;
+}
+main .benefits__rows-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 100px;
+}
+main .benefits__rows-row-content {
+  width: 45%;
+}
+main .benefits__rows-row-content-h2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #161722;
+  padding-bottom: 15px;
+}
+main .benefits__rows-row-content-p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #161722;
+}
+main .benefits__rows-row-content:nth-child(2), main .benefits__rows-row-content:last-child {
+  padding-left: 90px;
+}
+main .benefits__rows-row-content:first-child, main .benefits__rows-row-content:nth-child(3) {
+  padding-right: 90px;
 }

@@ -43,8 +43,9 @@ main {
         padding-bottom: 150px;
         background-color: rgb(254, 254, 254); 
         body.dark &{background-color: var.$black-header;}
-        min-height: 100vh;
         width: 100%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         text-transform: uppercase;
         font-family: "roboto condensed";
         &-content {
@@ -176,7 +177,8 @@ main {
             }
         }
         width: 100%;
-        min-height: 200vh;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         font-family: 'roboto condensed';
         text-transform: uppercase;
         &__content {
@@ -225,8 +227,9 @@ main {
     .our__team {
         width: 100%;
         font-family: 'roboto condensed';
-        min-height: 85vh;
         text-transform: uppercase;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         background-color: var.$bgColor;
         body.dark &{
             background-color: var.$black-header;

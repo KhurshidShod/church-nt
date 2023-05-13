@@ -243,7 +243,11 @@ header nav .nav__wrapper-menu button {
 header nav .nav__wrapper-menu button:hover {
   background-color: #f2c79b;
 }
+<<<<<<< HEAD
+@media (max-width: 850px) {
+=======
 @media (max-width: 900px) {
+>>>>>>> 645fac6c3a0a2700eb4dfb7d84d0a4936f4e082e
   header nav .nav__wrapper-menu-list {
     display: flex;
     justify-content: center;
@@ -265,7 +269,11 @@ header nav .nav__wrapper-menu-list-item {
 header nav .nav__wrapper-menu-list-item a {
   color: white;
 }
+<<<<<<< HEAD
+@media (max-width: 850px) {
+=======
 @media (max-width: 900px) {
+>>>>>>> 645fac6c3a0a2700eb4dfb7d84d0a4936f4e082e
   header nav .nav__wrapper-menu-list-item {
     font-size: 24px;
   }
@@ -291,7 +299,11 @@ header nav .nav__wrapper-menu-list-item:last-child:hover:after {
   height: 0 !important;
   background-color: transparent !important;
 }
+<<<<<<< HEAD
+@media (max-width: 850px) {
+=======
 @media (max-width: 900px) {
+>>>>>>> 645fac6c3a0a2700eb4dfb7d84d0a4936f4e082e
   header nav .nav__wrapper-menu-list-item:last-child {
     display: flex;
     color: #161722;
@@ -322,7 +334,11 @@ header nav .nav__wrapper-menu-list-item::before {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+<<<<<<< HEAD
+@media (max-width: 850px) {
+=======
 @media (max-width: 900px) {
+>>>>>>> 645fac6c3a0a2700eb4dfb7d84d0a4936f4e082e
   header nav .nav__wrapper-menu-list-item::before {
     background-color: black;
   }
@@ -341,7 +357,11 @@ header nav .nav__wrapper-menu-list-item::after {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+<<<<<<< HEAD
+@media (max-width: 850px) {
+=======
 @media (max-width: 900px) {
+>>>>>>> 645fac6c3a0a2700eb4dfb7d84d0a4936f4e082e
   header nav .nav__wrapper-menu-list-item::after {
     background-color: black;
   }
@@ -355,6 +375,8 @@ header nav .nav__wrapper-menu-list-item:hover::before, header nav .nav__wrapper-
   -o-transition: 0.3s linear;
 }
 
+<<<<<<< HEAD
+=======
 footer {
   width: 100%;
   background-color: #161722;
@@ -528,6 +550,7 @@ footer .footer__wrapper-part-form button:hover {
   }
 }
 
+>>>>>>> 645fac6c3a0a2700eb4dfb7d84d0a4936f4e082e
 .loader {
   width: 100%;
   height: 100vh;

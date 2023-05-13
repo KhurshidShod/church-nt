@@ -33,6 +33,29 @@ button {
 .cursor {
   width: 20px;
   height: 20px;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 100000000000000000;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  -moz-transition: transform 0.1s linear;
+  -ms-transition: transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+}
+.cursor__inner {
+  width: 10px;
+  height: 10px;
   background-color: white;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -40,7 +63,6 @@ button {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   z-index: 100000000000000000;
-  position: fixed;
   pointer-events: none;
   mix-blend-mode: difference;
   transition: transform 0.1s linear;

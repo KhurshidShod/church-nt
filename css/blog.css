@@ -484,7 +484,7 @@ footer .footer__wrapper-part ul li:first-child {
   }
 }
 .component3__container__box--card:hover {
-  box-shadow: inset 0 -500px 10px -10px rgba(255, 208, 160, 0.8);
+  box-shadow: inset 0 -600px 10px -10px rgba(255, 208, 160, 0.8);
 }
 .component3__container__box--card:hover h5 {
   color: #fff;
@@ -657,7 +657,7 @@ body.dark main {
 main .recent_post {
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
+  max-width: 1320px;
   width: 100%;
   margin: 0 auto;
   padding: 0px 20px;
@@ -794,7 +794,7 @@ main .recent_post .recent_post_content .content_left_btn button:hover a {
 .all_posts {
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
+  max-width: 1320px;
   width: 100%;
   margin: 0 auto;
   padding: 0px 20px;

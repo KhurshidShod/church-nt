@@ -7,7 +7,8 @@ header {
   width: 100%;
   height: 100px;
   font-family: "Roboto Condensed";
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 9999999;
   transition: .1s linear;
   -webkit-transition: .1s linear;

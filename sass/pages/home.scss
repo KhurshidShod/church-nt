@@ -2,6 +2,7 @@
 @use '../components/top-sermon';
 @use "../layout/header";
 @use "../components/blog-card";
+@use "../components/sermon-card";
 @use "../base/typography";
 @use "../utils/variables" as var;
 @use "../utils/mixin" as mixin;

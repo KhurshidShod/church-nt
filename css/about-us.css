@@ -28,8 +28,6 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-<<<<<<< HEAD
-=======
 }
 
 .cursor {
@@ -72,7 +70,6 @@ button {
   -moz-transition: transform 0.1s linear;
   -ms-transition: transform 0.1s linear;
   -o-transition: transform 0.1s linear;
->>>>>>> 36f58bf69ccdc0a3ea9251006528eebb28d09165
 }
 
 .container {

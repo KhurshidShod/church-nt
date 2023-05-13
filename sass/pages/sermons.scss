@@ -4,17 +4,15 @@
 @use '../layout/container' as cont ;
 @use '../utils/mixin' as var;
 
-
 .container2{
     background-image: url(../../images/sermons/background.png);
     background-size: cover;
     background-position: center;
     max-height: 432px;
     height: 100vh;
-    background-color: var.$bgColor;
     width: 100vw;
-     display: flex;
-     align-items: center;
+    display: flex;
+    align-items: center;
     .sermons_header {
        @include var.containerg;
        justify-content: flex-start;

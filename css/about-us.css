@@ -585,3 +585,78 @@ main .benefits__rows-row-content:nth-child(2), main .benefits__rows-row-content:
 main .benefits__rows-row-content:first-child, main .benefits__rows-row-content:nth-child(3) {
   padding-right: 90px;
 }
+main .our__team {
+  width: 100%;
+  font-family: "roboto condensed";
+  min-height: 85vh;
+  text-transform: uppercase;
+}
+main .our__team-content {
+  text-align: center;
+}
+main .our__team-content-p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #161722;
+  padding-bottom: 15px;
+}
+main .our__team-content-h1 {
+  font-weight: 700;
+  color: #161722;
+  font-size: 64px;
+  padding-bottom: 60px;
+}
+main .our__team-rows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 1250px) {
+  main .our__team-rows {
+    flex-direction: column;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: space-around;
+  }
+  main .our__team-rows-row {
+    margin-bottom: 50px;
+  }
+}
+main .our__team-rows-row {
+  background-color: #f5f2f0;
+  padding: 70px 60px;
+  text-align: center;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+main .our__team-rows-row-h2 {
+  transition: 0.5s;
+  font-weight: 700;
+  font-size: 24px;
+  color: #161722;
+  margin-top: 20px;
+}
+main .our__team-rows-row-h3 {
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 16px;
+  color: #161722;
+  margin-top: 10px;
+}
+main .our__team-rows-row i {
+  transition: 0.5s;
+  margin-top: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+main .our__team-rows-row:hover {
+  background-color: #ffd2a4;
+}
+main .our__team-rows-row:hover h2, main .our__team-rows-row:hover h3, main .our__team-rows-row:hover i {
+  color: #fff;
+}

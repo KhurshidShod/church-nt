@@ -118,6 +118,7 @@ main{
     @include colors.containerg;
     align-items: center;
     margin-top: 128px;
+    
     body.dark &{
         background-color: var.$black-header;
     }
@@ -139,6 +140,22 @@ main{
         grid-template-columns: repeat(4, 1fr);
         gap: 24px;
         .blog_content{
+            transition: 1,2s;
+            box-shadow: inset 0 -15px 0px -0px rgba(255, 208, 160, 0.8);
+            body.dark & {
+                box-shadow: inset 0 -15px 0px -0px var.$black-header;
+            }
+            &:hover {
+                transform: translateY(-15px);
+                box-shadow: inset 0 -500px 10px -10px rgba(255, 208, 160, 0.8);
+                body.dark & {
+                    box-shadow: inset 0 -500px 10px -10px var.$black-header;
+                }
+                h5{
+                    color:#fff;
+                    font-size: 24px;
+                }
+            }
             background: white;
             body.dark &{
                 background-color: var.$black;

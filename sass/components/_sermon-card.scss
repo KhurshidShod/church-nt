@@ -5,6 +5,7 @@
 .component2__container {
     @include mix.df(center, center, column);
     font-family: 'Roboto Condensed';
+    background-color: var.$bgColor;
     h2 {
         @include mix.title-2;
         padding-bottom: 64px;

@@ -25,16 +25,20 @@ header {
     }
     width: 100%;
     height: 100%;
-    @media (max-width: 850px) {
+    @media (max-width: 900px) {
     gap: 1rem;
     @include mixin.df(space-between, center, row);
+    }
+    .themeToggle{
+      color: var.$primary-color;
+      font-size: var.$h4;
     }
     #openNav{
       width: 40px;
       height: 30px;
       cursor: pointer;
       display: none;
-      @media (max-width: 850px) {
+      @media (max-width: 900px) {
       @include mixin.df(space-between, center, column);
       }
       &:hover{
@@ -77,7 +81,7 @@ header {
     .nav__wrapper-logo{
       padding: 0 2rem 0 0;
       height: 100%;
-      @media (max-width: 850px) {
+      @media (max-width: 900px) {
         border: none;
       }
       @include mixin.df(center, center, row);
@@ -95,7 +99,11 @@ header {
       -moz-transition: .3s linear;
       -ms-transition: .3s linear;
       -o-transition: .3s linear;
-      @media(max-width: 850px){
+      div{
+        @include mixin.df(center,center,row);
+        gap: 5px;
+      }
+      @media(max-width: 900px){
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -110,14 +118,14 @@ header {
         @include mixin.primary-btn(20px 48px);
       }
       &-list{
-        @media (max-width: 850px) {
+        @media (max-width: 900px) {
         @include mixin.df(center, center, column);
         }
         &-item{
           a{
             color: white;
           }
-        @media (max-width: 850px) {
+        @media (max-width: 900px) {
           font-size: var.$h5;
           a{
           color: var.$black !important;
@@ -140,7 +148,7 @@ header {
           -moz-transition: transform .3s linear;
           -ms-transition: transform .3s linear;
           -o-transition: transform .3s linear;
-          @media(max-width: 850px){
+          @media(max-width: 900px){
           display: flex;
           color: var.$black;
           font-size: var.$h3;
@@ -174,7 +182,7 @@ header {
             height: 2px;
             border-radius: 5px;
             background-color: white;
-            @media (max-width: 850px) {
+            @media (max-width: 900px) {
               background-color: black;
             }
             -webkit-border-radius: 5px;
@@ -191,7 +199,7 @@ header {
             height: 2px;
             border-radius: 5px;
             background-color: white;
-            @media (max-width: 850px) {
+            @media (max-width: 900px) {
               background-color: black;
             }
             -webkit-border-radius: 5px;

@@ -109,7 +109,7 @@ header nav {
     gap: 30px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav {
     gap: 1rem;
     display: flex;
@@ -118,13 +118,17 @@ header nav {
     flex-direction: row;
   }
 }
+header nav .themeToggle {
+  color: #ffd2a4;
+  font-size: 32px;
+}
 header nav #openNav {
   width: 40px;
   height: 30px;
   cursor: pointer;
   display: none;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav #openNav {
     display: flex;
     justify-content: space-between;
@@ -173,7 +177,7 @@ header nav .nav__wrapper-logo {
   flex-direction: row;
   border-right: 1px solid white;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-logo {
     border: none;
   }
@@ -198,7 +202,14 @@ header nav .nav__wrapper-menu {
   align-items: center;
   flex-direction: row;
 }
-@media (max-width: 850px) {
+header nav .nav__wrapper-menu div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu {
     position: fixed;
     width: 100%;
@@ -229,7 +240,7 @@ header nav .nav__wrapper-menu button {
 header nav .nav__wrapper-menu button:hover {
   background-color: #f2c79b;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu-list {
     display: flex;
     justify-content: center;
@@ -251,7 +262,7 @@ header nav .nav__wrapper-menu-list-item {
 header nav .nav__wrapper-menu-list-item a {
   color: white;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu-list-item {
     font-size: 24px;
   }
@@ -277,7 +288,7 @@ header nav .nav__wrapper-menu-list-item:last-child:hover:after {
   height: 0 !important;
   background-color: transparent !important;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu-list-item:last-child {
     display: flex;
     color: #161722;
@@ -308,7 +319,7 @@ header nav .nav__wrapper-menu-list-item::before {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu-list-item::before {
     background-color: black;
   }
@@ -327,7 +338,7 @@ header nav .nav__wrapper-menu-list-item::after {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu-list-item::after {
     background-color: black;
   }
@@ -360,8 +371,11 @@ header nav .nav__wrapper-menu-list-item:hover::before, header nav .nav__wrapper-
 }
 
 main {
-  background: #E5E5E5;
+  background: #fff5eb;
   padding: 128px 0px;
+}
+body.dark main {
+  background-color: #0D0D0D;
 }
 main .recent_post {
   display: flex;
@@ -386,6 +400,9 @@ main .recent_post_header h4 {
   font-family: "Roboto Condensed";
   text-align: center;
 }
+body.dark main .recent_post_header h4 {
+  color: white;
+}
 main .recent_post_header h2 {
   font-weight: 700;
   font-size: 40px;
@@ -396,14 +413,20 @@ main .recent_post_header h2 {
   font-family: "Roboto Condensed";
   transition: 0.5s;
 }
+body.dark main .recent_post_header h2 {
+  color: white;
+}
 main .recent_post_header h2:hover {
   font-size: 44px;
 }
 main .recent_post .recent_post_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #fff;
+  background-color: white;
   padding: 56px;
+}
+body.dark main .recent_post .recent_post_content {
+  background-color: #161722;
 }
 main .recent_post .recent_post_content .content_right {
   display: flex;
@@ -432,6 +455,9 @@ main .recent_post .recent_post_content .content_left_date h5 {
   font-family: "Roboto Condensed";
   opacity: 0.8;
 }
+body.dark main .recent_post .recent_post_content .content_left_date h5 {
+  color: white;
+}
 main .recent_post .recent_post_content .content_left_header h4 {
   font-weight: 700;
   font-size: 32px;
@@ -441,6 +467,9 @@ main .recent_post .recent_post_content .content_left_header h4 {
   font-family: "Roboto Condensed";
   letter-spacing: -0.01em;
   padding-bottom: 16px;
+}
+body.dark main .recent_post .recent_post_content .content_left_header h4 {
+  color: white;
 }
 main .recent_post .recent_post_content .content_left_text {
   padding-bottom: 32px;
@@ -454,6 +483,9 @@ main .recent_post .recent_post_content .content_left_text p {
   font-family: "Roboto Condensed";
   text-transform: none;
   opacity: 0.8;
+}
+body.dark main .recent_post .recent_post_content .content_left_text p {
+  color: white;
 }
 main .recent_post .recent_post_content .content_left_btn button {
   padding: 24px 64px;
@@ -492,6 +524,9 @@ main .recent_post .recent_post_content .content_left_btn button:hover a {
   align-items: center;
   margin-top: 128px;
 }
+body.dark .all_posts {
+  background-color: #0D0D0D;
+}
 .all_posts_header {
   padding-bottom: 64px;
 }
@@ -505,6 +540,9 @@ main .recent_post .recent_post_content .content_left_btn button:hover a {
   letter-spacing: -0.01em;
   transition: 0.5s;
 }
+body.dark .all_posts_header h2 {
+  color: #fff;
+}
 .all_posts_header h2:hover {
   transform: matrix(1, 0, 1, 0, 1, 0);
 }
@@ -514,9 +552,12 @@ main .recent_post .recent_post_content .content_left_btn button:hover a {
   gap: 24px;
 }
 .all_posts .all_posts_blog .blog_content {
-  background: #FFFFFF;
+  background: white;
   padding: 48px 32px;
   transition: 0.8s;
+}
+body.dark .all_posts .all_posts_blog .blog_content {
+  background-color: #161722;
 }
 .all_posts .all_posts_blog .blog_content .relationship {
   font-weight: 700;
@@ -542,6 +583,9 @@ main .recent_post .recent_post_content .content_left_btn button:hover a {
   letter-spacing: -0.01em;
   padding-bottom: 16px;
 }
+body.dark .all_posts .all_posts_blog .blog_content h5 {
+  color: #fff;
+}
 .all_posts .all_posts_blog .blog_content .text {
   font-weight: 400;
   font-size: 16px;
@@ -553,6 +597,9 @@ main .recent_post .recent_post_content .content_left_btn button:hover a {
   text-transform: none;
   padding-bottom: 48px;
 }
+body.dark .all_posts .all_posts_blog .blog_content .text {
+  color: #fff;
+}
 .all_posts .all_posts_blog .blog_content h6 {
   font-weight: 400;
   font-size: 16px;
@@ -561,6 +608,9 @@ main .recent_post .recent_post_content .content_left_btn button:hover a {
   text-transform: uppercase;
   font-family: "Roboto Condensed";
   line-height: 24px;
+}
+body.dark .all_posts .all_posts_blog .blog_content h6 {
+  color: #fff;
 }
 .all_posts .all_posts_blog .blog_content:hover {
   background: #FFD0A0;

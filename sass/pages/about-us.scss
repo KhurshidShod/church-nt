@@ -42,7 +42,8 @@ main {
     .love__compassion {
         padding-top: 150px;
         padding-bottom: 150px;
-        background-color: rgb(254, 254, 254);
+        background-color: rgb(254, 254, 254); 
+        body.dark &{background-color: var.$black-header;}
         min-height: 100vh;
         width: 100%;
         text-transform: uppercase;
@@ -57,18 +58,18 @@ main {
                 font-weight: 700;
                 font-size: var.$h6;
                 padding-bottom: 15px;
-                color: var.$black;
+                color: var.$black; body.dark &{color: var.$white;};
             }
             &-h1 {
                 font-family: 700;
                 font-size: var.$h1;
-                color: var.$black;
+                color: var.$black; body.dark &{color: var.$white;};
                 padding-bottom: 30px;
             }
             &-p2 {
                 font-weight: 400;
                 font-size: var.$h6;
-                color: var.$black;
+                color: var.$black; body.dark &{color: var.$white;};
                 padding-bottom: 45px;
             }
         }
@@ -126,24 +127,28 @@ main {
                 &-p {
                     font-weight: 400;
                     font-size: var.$h6;
-                    color: var.$black;
+                    color: var.$black; body.dark &{color: var.$white;};
                     padding-bottom: 15px;
                 }
                 &-h1 {
                     font-weight: 700;
-                    color: var.$black;
+                    color: var.$black; body.dark &{color: var.$white;};
                     font-size: var.$h4;
                     padding-bottom: 15px;
                 }
                 &-p2 {
                     font-weight: 400;
                     font-size: var.$h6;
-                    color: var.$black;
+                    color: var.$black; body.dark &{color: var.$white;};
                 }
             }
         }
     }
     .benefits {
+        background-color: rgb(254, 254, 254); body.dark &{background-color: var.$black-header;}
+        body.dark{
+            background-color: var.$black;
+        }
         @media (max-width: 900px) {
             .benefits__content {
                 text-align: center;
@@ -181,12 +186,12 @@ main {
                 font-weight: 400;
                 font-size: var.$h6;
                 text-align: center;
-                color: var.$black;
+                color: var.$black; body.dark &{color: var.$white;};
                 padding-bottom: 15px;
             }
             &-h1 {
                 font-size: var.$h2;
-                color: var.$black;
+                color: var.$black; body.dark &{color: var.$white;};
                 font-weight: 700;
                 text-align: center;
                 padding-bottom: 65px;
@@ -201,13 +206,13 @@ main {
                     &-h2 {
                         font-weight: 700;
                         font-size: var.$h4;
-                        color: var.$black;
+                        color: var.$black; body.dark &{color: var.$white;};
                         padding-bottom: 15px;
                     }
                     &-p {
                         font-weight: 400;
                         font-size: var.$h6;
-                        color: var.$black;
+                        color: var.$black; body.dark &{color: var.$white;};
                     }
                 }
                 &-content:nth-child(2), &-content:last-child {

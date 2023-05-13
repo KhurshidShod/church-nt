@@ -2,31 +2,39 @@
 @use '../components/top-sermon';
 @use '../base/typography';
 @use '../layout/container' as cont ;
-@use '../utils/mixin' as var;
-@use '../utils/variables' as colors;
+@use '../utils/mixin' as colors;
+@use '../utils/variables' as var;
 
 main{
-    background: #E5E5E5;
+    background: var.$light-orange;
+    body.dark &{
+        background-color: var.$black-header;
+    }
     padding: 128px 0px;
 
     .recent_post{
-    @include var.containerg;
+    @include colors.containerg;
    align-items: center;
    
    &_header{
     margin-bottom: 64px;
     h4{
-        @include var.title(700, 16px, 18.5px, #232536);
+        @include colors.title(700, 16px, 18.5px, #232536);
         padding-bottom: 16px;
         font-family: 'Roboto Condensed';
         text-align: center;
+        body.dark & {
+            color: white;
+        }
     }
 
     h2{
-        @include var.title-3;
+        @include colors.title-3;
         font-family: 'Roboto Condensed';
         transition: 0.5s;
-        
+        body.dark & {
+            color: white;
+        }
     }
     h2:hover{
         font-size: 44px;
@@ -35,7 +43,10 @@ main{
    .recent_post_content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #fff;
+    background-color: var.$bgColor;
+    body.dark &{
+        background-color: var.$black;
+    }
     padding: 56px;
     .content_right{
         display: flex;
@@ -48,42 +59,46 @@ main{
     .content_left{
         display: flex;
         flex-direction: column;
-       max-width: 520px;
+        max-width: 520px;
         &_date{
             display: flex;
             justify-content: space-between;
             padding-bottom: 12px;
             max-width: 469px;
              h5{
-                @include var.title(400, 16px, 19px, colors.$black);
+                @include colors.title(400, 16px, 19px, var.$black);
                 opacity: 0.8;
-                
-                
+                body.dark & {
+                    color: white;
+                } 
              }
         }
         &_header{
-            
             h4{
-            @include var.title-4;
+            @include colors.title-4;
             letter-spacing: -0.01em;
             padding-bottom: 16px;
-            
-            
+            body.dark & {
+                color: white;
+            }
         }
         }
         &_text{
             p{
-                @include var.title-6;
+                @include colors.title-6;
                 text-transform: none;
                 opacity: 0.8;
+                body.dark & {
+                    color: white;
+                }
             }
             padding-bottom: 32px;
         }
         &_btn{
             button {
-                @include var.primary-btn($padding: 24px 64px);
+                @include colors.primary-btn($padding: 24px 64px);
                 a{
-                    color: colors.$black;
+                    color: var.$black;
                     transition: 0.5s;
                 }
 
@@ -100,16 +115,22 @@ main{
 }
 
 .all_posts{
-    @include var.containerg;
+    @include colors.containerg;
     align-items: center;
     margin-top: 128px;
+    body.dark &{
+        background-color: var.$black-header;
+    }
     &_header{
         padding-bottom: 64px;
 
         h2{
-            @include var.title-2;
+            @include colors.title-2;
             letter-spacing: -0.01em;
             transition: 0.5s;
+            body.dark &{
+                color: var.$white;
+            }
         } 
 
         h2:hover{
@@ -122,15 +143,16 @@ main{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 24px;
-
         .blog_content{
-           
-            background: #FFFFFF;
+            background: white;
+            body.dark &{
+                background-color: var.$black;
+            }
             padding: 48px 32px;
             transition: 0.8s;
 
             .relationship{
-                @include var.title(700, 12px, 14px);
+                @include colors.title(700, 12px, 14px);
                 background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -139,20 +161,29 @@ main{
                padding-bottom: 16px;
             }
             h5{
-                @include var.title-5;
+                @include colors.title-5;
                 letter-spacing: -0.01em;
                 padding-bottom: 16px;
+                body.dark &{
+                    color: var.$white;
+                }
             }
             .text{
-                @include var.title(400, 16px, 24px);
+                @include colors.title(400, 16px, 24px);
                 opacity: 0.78;
                 text-transform: none; 
                 padding-bottom: 48px;
+                body.dark &{
+                    color: var.$white;
+                }
             }
 
             h6{
-                @include var.title-6;
+                @include colors.title-6;
                 line-height: 24px;
+                body.dark &{
+                    color: var.$white;
+                }
             }
 
             

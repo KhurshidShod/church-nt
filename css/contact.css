@@ -109,7 +109,7 @@ header nav {
     gap: 30px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav {
     gap: 1rem;
     display: flex;
@@ -118,13 +118,17 @@ header nav {
     flex-direction: row;
   }
 }
+header nav .themeToggle {
+  color: #ffd2a4;
+  font-size: 32px;
+}
 header nav #openNav {
   width: 40px;
   height: 30px;
   cursor: pointer;
   display: none;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav #openNav {
     display: flex;
     justify-content: space-between;
@@ -173,7 +177,7 @@ header nav .nav__wrapper-logo {
   flex-direction: row;
   border-right: 1px solid white;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-logo {
     border: none;
   }
@@ -198,7 +202,14 @@ header nav .nav__wrapper-menu {
   align-items: center;
   flex-direction: row;
 }
-@media (max-width: 850px) {
+header nav .nav__wrapper-menu div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu {
     position: fixed;
     width: 100%;
@@ -229,7 +240,7 @@ header nav .nav__wrapper-menu button {
 header nav .nav__wrapper-menu button:hover {
   background-color: #f2c79b;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu-list {
     display: flex;
     justify-content: center;
@@ -251,7 +262,7 @@ header nav .nav__wrapper-menu-list-item {
 header nav .nav__wrapper-menu-list-item a {
   color: white;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu-list-item {
     font-size: 24px;
   }
@@ -277,7 +288,7 @@ header nav .nav__wrapper-menu-list-item:last-child:hover:after {
   height: 0 !important;
   background-color: transparent !important;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu-list-item:last-child {
     display: flex;
     color: #161722;
@@ -308,7 +319,7 @@ header nav .nav__wrapper-menu-list-item::before {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu-list-item::before {
     background-color: black;
   }
@@ -327,7 +338,7 @@ header nav .nav__wrapper-menu-list-item::after {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   header nav .nav__wrapper-menu-list-item::after {
     background-color: black;
   }

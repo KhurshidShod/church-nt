@@ -23,7 +23,11 @@ const h4s = document.querySelectorAll("h4");
 const h5s = document.querySelectorAll("h5");
 const h6s = document.querySelectorAll("h6");
 const btns = document.querySelectorAll("button");
+const themeToggler = document.getElementById("themeToggle")
 
+themeToggler.addEventListener("click", () => {
+    document.body.classList.toggle("dark")
+})
 document.addEventListener("mousemove", (e) => {
     let x = e.clientX,
         y = e.clientY;

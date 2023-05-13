@@ -424,9 +424,12 @@ footer .footer__wrapper-part img {
 }
 footer .footer__wrapper-part ul li {
   margin: 1rem;
-  font-size: 12px;
   color: #fff;
+}
+footer .footer__wrapper-part ul li a {
+  font-size: 12px;
   font-weight: 400;
+  color: #fff;
   text-transform: uppercase;
 }
 footer .footer__wrapper-part ul li:first-child {

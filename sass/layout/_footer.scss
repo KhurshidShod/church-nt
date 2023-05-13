@@ -49,10 +49,13 @@ footer{
             ul{
                 li{
                     margin: 1rem;
-                    font-size: var.$h7;
                     color: var.$white;
-                    font-weight: 400;
-                    text-transform: uppercase;
+                    a{
+                        font-size: var.$h7;
+                        font-weight: 400;
+                        color: var.$white;
+                        text-transform: uppercase;
+                    }
                     &:first-child{
                         font-size: var.$h6;
                         margin-top: 0;

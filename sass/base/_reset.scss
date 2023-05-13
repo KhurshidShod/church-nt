@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   cursor: none !important;
+  @media (max-width: 900px) {
+    cursor: auto;
+  }
 }
 
 *,
@@ -42,6 +45,9 @@ button {
   -o-border-radius: 50%;
   z-index: 99999999999999999;
   position: fixed;
+  @media (max-width: 900px) {
+    display: none;
+  }
   pointer-events: none;
   mix-blend-mode: difference;
   transition: transform .1s linear;

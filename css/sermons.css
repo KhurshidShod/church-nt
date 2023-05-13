@@ -4,6 +4,11 @@
   padding: 0;
   cursor: none !important;
 }
+@media (max-width: 900px) {
+  * {
+    cursor: auto;
+  }
+}
 
 *,
 *::after,
@@ -52,6 +57,11 @@ button {
   -moz-transition: transform 0.1s linear;
   -ms-transition: transform 0.1s linear;
   -o-transition: transform 0.1s linear;
+}
+@media (max-width: 900px) {
+  .cursor {
+    display: none;
+  }
 }
 .cursor__inner {
   width: 10px;

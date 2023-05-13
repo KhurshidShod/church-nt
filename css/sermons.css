@@ -28,14 +28,20 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+<<<<<<< HEAD
+=======
 }
 
 .cursor {
   width: 20px;
   height: 20px;
-  background-color: white;
+  background-color: transparent;
+  border: 3px solid white;
   border-radius: 50%;
   -webkit-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
@@ -48,6 +54,25 @@ button {
   -moz-transition: transform 0.1s linear;
   -ms-transition: transform 0.1s linear;
   -o-transition: transform 0.1s linear;
+}
+.cursor__inner {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 100000000000000000;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  -moz-transition: transform 0.1s linear;
+  -ms-transition: transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+>>>>>>> 36f58bf69ccdc0a3ea9251006528eebb28d09165
 }
 
 .container {

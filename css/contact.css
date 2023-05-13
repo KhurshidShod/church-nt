@@ -370,7 +370,6 @@ footer .footer__wrapper {
   justify-content: space-between;
   align-items: start;
   flex-direction: row;
-  background-color: green;
   gap: 1rem;
   flex-wrap: wrap;
 }

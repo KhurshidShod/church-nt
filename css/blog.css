@@ -18,9 +18,14 @@ textarea:focus {
   outline: none;
 }
 
+li {
+  list-style: none;
+}
+
 button {
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 .container {
